@@ -1,0 +1,10 @@
+[
+  {
+    "name": "name",
+    "pattern": "\\b[A-Z][a-z]+(?: [A-Z][a-z]+)\\b"
+  },
+  {
+    "name": "number",
+    "pattern": "d\\{4}"
+  }
+]

@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+
+- rule: rule 1
+  steps:
+  - intent: patente
+  - action: utter_patente
+
+- rule: rule 2
+  steps:
+  - intent: periodo_de_graca
+  - action: utter_periodo_de_graca
+
+- rule: rule 3
+  steps:
+  - intent: como_proteger_invencao
+  - action: utter_como_proteger_invencao
+
+- rule: rule 43
+  steps:
+  - intent: cumprimento
+  - action: utter_cumprimento
+
+- rule: rule 44
+  steps:
+  - intent: cumprimento_despedida
+  - action: utter_cumprimento_despedida
+
+- rule: rule 45
+  steps:
+    - intent: cumprimento_agradecimento
+    - action: utter_cumprimento_agradecimento
+
+- rule: rule 46
+  steps:
+    - intent: pergunta_bot
+    - action: utter_pergunta_bot
+
+- rule: rule 47
+  steps:
+    - intent: greet
+    # - action: utter_greet
+    - action: action_show_name
+
+- rule: rule 48
+  steps:
+    - intent: informa_numero
+    - action: utter_informa_numero
+
+- rule: rule 49
+  steps:
+    - intent: informa_situacao
+    # - action: utter_greet
+    - action: action_informa_situacao
+
+- rule: rule 50
+  steps:
+    - intent: informa_data
+    - action: utter_informa_data

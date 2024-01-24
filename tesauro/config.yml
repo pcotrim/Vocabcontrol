@@ -1,0 +1,71 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# The assistant project unique identifier
+# This default value must be replaced with a unique assistant name within your deployment
+assistant_id: 20230623-104626-dark-pool
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+# # If you'd like to customize it, uncomment and adjust the pipeline.
+# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
+# https://rasa.com/docs/rasa/components#regexentityextractor
+# https://forum.rasa.com/t/regexentityextractor-entities/59238
+
+- name: WhitespaceTokenizer # tokenizador de espaços em branco.
+#- name: RegexFeaturizer # Extrator de recursos baseado em expressões regulares.
+- name: RegexEntityExtractor # Extrator de entidades baseado em expressões regulares.
+  case_sensitive: False
+#  use_lookup_tables: False
+  use_regexes: True
+#  use_word_boundaries: False
+#  regexes:
+#      - "(\\bPI\\d{7}-\\d{1}\\b|\\bMU\\d{7}-\\d{1}\\b|\\bPI\\d{7}\\b|\\bMU\\d{7}\\b)"
+
+- name: LexicalSyntacticFeaturizer #  Extrator de recursos lexical-sintático.
+- name: CountVectorsFeaturizer # Extrator de recursos baseado em contagem de vetores.
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier # Classificador DIET (Dual Intent and Entity Transformer).
+  entity_recognition: True
+  epochs: 100
+  constrain_similarities: True
+
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 100
+#     constrain_similarities: true
+#   - name: FallbackClassifier
+#     threshold: 0.3
+#     ambiguity_threshold: 0.1
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+# # No configuration for policies was provided. The following default policies were used to train your model.
+# # If you'd like to customize them, uncomment and adjust the policies.
+# # See https://rasa.com/docs/rasa/policies for more information.
+   - name: MemoizationPolicy
+     max_history: 5
+   - name: RulePolicy
+#   - name: UnexpecTEDIntentPolicy
+#     max_history: 5
+#     epochs: 100
+   - name: TEDPolicy
+     max_history: 5
+     epochs: 100
+#     constrain_similarities: true
+#   - name: MappingPolicy
+#   - name: FormPolicy
+   - name: RulePolicy
+     nlu_threshold: 0.3  # Limiar de confiança para a NLU
+     core_threshold: 0.3  # Limiar de confiança para o Core (ação)
+     fallback_core_action_name: "action_default_fallback"
+     fallback_nlu_action_name: "action_default_fallback"

@@ -1,0 +1,85 @@
+sudo apt update
+
+# remover python 
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+                         libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+                         libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl \
+                         git
+curl https://pyenv.run | bash
+rm -rf ~/.pyenv
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
+pyenv install 3.8.10
+pyenv global 3.8.10
+
+
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.8 python3.8-dev python3.8-venv
+
+git clone https://github.com/Vanilson66/GUI_Rasa
+cd GUI_Rasa
+
+# start
+python -m venv ./venv
+source ./venv/bin/activate
+pip install --upgrade pip
+
+pip install rasa spacy dataparser gunicorn Flask requests flask_cors
+cd tesauro
+pip3 install -r requirements.txt
+
+pip install gunicorn
+sudo nano /etc/systemd/system/GUI_Rasa.service
+
+[Unit]
+Description=Gunicorn instance for a chatbot
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/GUI_Rasa
+ExecStart=/home/ubuntu/GUI_Rasa/venv/bin/gunicorn -b localhost:8000 chatbot:app
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=Gunicorn instance for rasa
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/GUI_Rasa/tesauro
+ExecStart=/home/ubuntu/GUI_Rasa/venv/bin/rasa run --enable-api -m ./models/20240103-220920-ivory-loop.tar.gz -p 333
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl daemon-reload
+sudo systemctl start GUI_Rasa
+sudo systemctl enable GUI_Rasa
+
+sudo apt-get install nginx
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+sudo nano /etc/nginx/sites-available/default
+
+upstream flaskchatbot {
+    server 127.0.0.1:8000;
+}
+
+location / {
+    proxy_pass http://flaskchatbot;
+}
+
+location /tkinter3.htm {
+    proxy_pass http://flaskchatbot;
+}

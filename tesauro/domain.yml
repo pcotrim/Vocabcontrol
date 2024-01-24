@@ -1,0 +1,106 @@
+version: "3.1"
+
+intents:
+
+    - patente
+    - periodo_de_graca
+    - como_proteger_invencao
+    - cumprimento
+    - cumprimento_despedida
+    - cumprimento_agradecimento
+    - pergunta_bot
+    - greet
+    - informa_numero
+    - informa_situacao
+    - fallback
+    - informa_data
+
+actions:
+
+    - utter_patente
+    - utter_periodo_de_graca
+    - utter_como_proteger_invencao
+    - utter_cumprimento
+    - utter_cumprimento_despedida
+    - utter_cumprimento_agradecimento
+    - utter_pergunta_bot
+    - utter_greet
+    - utter_informa_numero
+    - action_show_name
+    - action_default_fallback
+    - action_informa_situacao
+    - action_informa_data
+
+entities:
+  - name
+  - ped_number
+  - data
+
+slots:
+  ped_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: ped_number
+
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name
+
+  data:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: data
+
+responses:
+
+    utter_informa_data:
+    - text: "Data: {data}"
+
+    utter_informa_situacao:
+    - text: "Pedido: {ped_number}"
+
+    utter_informa_numero:
+    - text: "Número gravado: {ped_number}"
+
+    utter_greet:
+    - text: "Olá {name}! Como vai você?"
+    - text: "Olá {name} :)"
+
+    utter_patente:
+    - text: "Patente é um título de propriedade temporária sobre uma invenção ou modelo de utilidade, outorgado pelo Estado aos inventores ou autores ou outras pessoas físicas ou jurídicas detentoras de direitos sobre a criação. Com este direito, o inventor ou o detentor da patente tem o direito de impedir terceiros, sem o seu consentimento, de produzir, usar, colocar a venda, vender ou importar produto objeto de sua patente e/ ou processo ou produto obtido diretamente por processo por ele patenteado. Em contrapartida, o inventor se obriga a revelar detalhadamente todo o conteúdo técnico da matéria protegida pela patente."
+
+    utter_periodo_de_graca:
+    - text: "O período de graça possibilita a proteção de um invento divulgado, até 12 meses antes do depósito, em alguns casos especiais. Especificamente, não será considerada como estado da técnica a divulgação de Invenção ou Modelo de Utilidade, quando ocorrida durante os doze meses que precederem a data de depósito ou a data da prioridade mais antiga do Pedido de Patente, se essa divulgação for promovida pelo próprio inventor ou por terceiros, com base em informações obtidas direta ou indiretamente do inventor ou em decorrência de atos por este realizados. Cabe observar que o INPI poderá exigir declaração do inventor relativo à divulgação, acompanhada de provas ou não, indicando a forma, local e data de ocorrência da divulgação. Ainda, o inventor poderá indicar essas informações por ocasião do depósito do pedido."
+
+    utter_como_proteger_invencao:
+    - text: "A patente é o instrumento correto para isso. Portanto, é necessário depositar um pedido no INPI, o qual, depois de devidamente analisado, poderá se tornar uma patente, com validade em todo o território nacional."
+
+
+    utter_cumprimento:
+    - text: "Olá! {name}"
+    - text: "Oi! {name}"
+    - text: "Tudo bem {name}?"
+    - text: "Em que posso ajudar sobre o assunto de patentes {name}?"
+
+    utter_cumprimento_despedida:
+    - text: "Tchau, espero ter ajudado!"
+    - text: "Volte sempre!"
+
+    utter_cumprimento_agradecimento:
+    - text: "De nada!"
+    - text: "Por nada!"
+    - text: "Estou à disposição!"
+
+    utter_pergunta_bot:
+    - text: "Eu sou o chatbot PatentIA."
+    - text: "Eu sou um bot que aborda sobre o domínio das patentes."
+    - text: "Eu sou um bot que aborda sobre a área de conhecimento patentes."
+    - text: "Eu sou um bot treinado em machine learning que tem algum conhecimento sobre patentes."
+    - text: "Sou um bot e posso responder algumas perguntas sobre patentes."

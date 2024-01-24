@@ -1,0 +1,140 @@
+version: "3.1"
+
+nlu:
+
+- intent: patente
+  examples: |
+    - O que é patente?
+    - O que é uma carta-patente?
+    - Para que serve uma patente?
+    - Você pode me explicar o que é uma patente?
+    - Qual é a definição de patente?
+    - O que se entende por patente?
+    - Você poderia me definir o termo patente?
+    - Como é definido o termo patente?
+    - Pode me fornecer uma definição de patente?
+    - Qual é o conceito de uma patente?
+    - O que representa a palavra patente no contexto da propriedade intelectual?
+    - O que implica ter uma patente?
+
+- intent: periodo_de_graca
+  examples: |
+    - O que é período de graça?
+    - O que significa o período de graça?
+    - Qual o prazo do período de graça?
+    - Até quando posso divulgar minha invenção sem perder o direito por ela?
+    - Até quando posso divulgar meu invento?
+    - Até quando posso divulgar minha criação?
+    - Até quando posso divulgar minha invenção?
+    - A publicação de artigos científicos impede o depósito de uma patente?
+    - Posso mostrar a minha invenção para investidores, antes de protegê-la?
+    - Como faço se pretendo publicar um artigo científico ou divulgar meus resultados e ainda não protegi minha tecnologia?
+    - Posso apresentar a minha invenção em congressos, seminários, eventos, defesas de monografia, dissertação ou tese, antes de protegê-la?
+
+- intent: como_proteger_invencao
+  examples: |
+    - Como proteger uma invenção ou criação industrializável?
+    - Como proteger uma invenção?
+    - Como proteger uma criação industrializável?
+    - Como proteger um invento?
+
+
+- intent: cumprimento
+  examples: |
+    - Olá!
+    - Oi!
+    - Bom dia!
+    - Boa tarde!
+    - Boa noite!
+
+- intent: cumprimento_despedida
+  examples: |
+    - Te vejo depois!
+    - Tchau!
+    - Adeus!
+
+- intent: cumprimento_agradecimento
+  examples: |
+    - Muito obrigada!
+    - Muito obrigado!
+    - Obrigada!
+    - obrigado!
+    - Muito agradecida!
+    - Muito agradecido!
+    - Grata!
+    - Grato!
+    - Muito grata!
+    - Muito grato!
+    - Valeu!
+    - Valeu mesmo!
+
+- intent: pergunta_bot
+  examples: |
+    - Você é um bot?
+    - O que você é?
+    - Você é humano?
+    - Estou falando com um humano?
+    - Estou falando com um robô?
+    - Estou falando com um bot?
+    - Você é uma inteligência artificial?
+    - Você é uma IA?
+    - Você é uma AI?
+    - Você é um robô?
+    - Qual sua área de conhecimento?
+    - Qual seu domínio do conhecimento?
+
+- regex: name
+  examples: |
+    - \b[A-Za-zãáâéêíõôóú]+([A-Za-zãáâéêíõôóú]+)?\b
+# ((http|ftp|https)://)?([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?
+# https://www.regextester.com/99144
+
+- intent: greet
+  examples: |
+    - Olá, meu nome é [Paula](name)
+    - oi, meu nome é [Luciana](name)
+    - bom dia, meu nome é [Antonio](name)
+    - boa noite, meu nome é [Antonio](name)
+    - boa tarde, meu nome é [Antonio](name)
+
+# Conversational AI with Rasa: Entities
+# https://www.youtube.com/watch?v=7nFXhd3AF78&list=PL75e0qA87dlEjGAc9j9v3a5h1mxI2Z9fi&index=5
+# https://www.regextester.com/99144
+# \b\PI\d{7}\-\d{2}\b|\b\MU\d{7}\-\d{2}\b|\b\PI\d{7}\b|\b\MU\d{7}\b
+
+#- regex: numero
+#  examples: |
+#    - \\bPI\\d{7}-\\d{1}\\b|\\bMU\\d{7}-\\d{1}\\b|\\bPI\\d{7}\\b|\\bMU\\d{7}\\b
+
+- intent: informa_numero
+  examples: |
+    - O número do pedido é [PI9802324](ped_number)
+    - O número é [MU9001087](ped_number)
+    - O número é [PI0990900](ped_number)
+    - O número é [PI1001087](ped_number)
+    - O número é [PI2001087](ped_number)
+    - O número é [PI3001087](ped_number)
+    - O número é [PI4001087](ped_number)
+    - O número é [PI5001087](ped_number)
+    - O número é [PI6001087](ped_number)
+    - O número é [PI7001087](ped_number)
+    - O número é [PI8001087](ped_number)
+    - O número é [PI9001087](ped_number)
+
+- intent: informa_situacao
+  examples: |
+    - Qual a situação do pedido ?
+
+- regex: data
+  examples: |
+    - \b\d{2}-(0[1-9]|1[0-2])-\d{4}\b
+
+- intent: informa_data
+  examples: |
+    - A data da reunião é [20-09-2023](data).
+    - Marquei para [15-12-2023](data).
+    - No dia [02-05-2024](data) teremos um evento.
+
+- synonym: carta-patente
+  examples: |
+   - patente

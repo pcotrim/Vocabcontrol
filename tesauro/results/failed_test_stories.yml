@@ -1,0 +1,67 @@
+version: "3.1"
+stories:
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: patente: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: como_proteger_invencao: amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: patente: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: como_proteger_invencao: amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: goodbye  # predicted: patente: bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: sad path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: patente: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: patente_expedição: not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: affirm  # predicted: royalty_propriedade_intelectual: yes
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: sad path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: patente: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: patente_expedição: not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: deny  # predicted: patente_deposito_de_pedido_internacional: not really
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: sad path 3 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: patente: hi
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: diferença_descoberta_invenção: very terrible
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: deny  # predicted: patente_deposito_de_pedido: no
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: say goodbye (.\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: patente: bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: bot challenge (.\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: patente_expedição: are you a bot?
+  - action: utter_iamabot  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback

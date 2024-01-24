@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(0deg, rgb(50, 76, 119), rgb(38, 36, 68));
+
+    }
+
+    div {
+      background-color: rgba(51, 51, 69, 0.95);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 80px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+    }
+
+    input {
+      padding: 15px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: dodgerblue;
+      border: none;
+      padding: 15px;
+      width: 100%;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+
+    }
+
+    button:hover {
+      background-color: deepskyblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Login</h1>
+    <form method="post" action="{{ url_for('tkinter3') }}">
+      <!-- <input type="text" placeholder="Nome"> -->
+      <!-- <br><br> -->
+      <input type="password" placeholder="Digite sua senha" name="senha" required>
+      <br><br>
+      <button type="submit" value="Entrar">Enviar</button>
+      <p id="resultado" style="color: red;">Senha incorreta!</p>
+  </div>
+
+  <script>
+    function verificarSenha() {
+      const queryString = window.location.search;
+      console.log(queryString);
+
+      // Função para obter o valor de um parâmetro específico
+      const parametros = new URLSearchParams(queryString);
+      const senhaIncorreta = parametros.get("senhaIncorreta");
+      console.log(senhaIncorreta);
+
+      if (senhaIncorreta) {
+        // Senha incorreta, exibir mensagem
+        document.getElementById('resultado').style.display = 'block';
+      } else {
+        // Senha correta, ocultar mensagem
+        document.getElementById('resultado').style.display = 'none';
+      }
+
+    }
+    verificarSenha()
+  </script>
+</body>
+
+</html>

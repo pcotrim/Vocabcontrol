@@ -1,0 +1,27 @@
+<!-- https://github.com/scalableminds/chatroom/tree/master/src -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cientistaspatentes.com.br/chatroom/Chatroom.scss" />
+</head>
+
+<body>
+  <div class="chat-container"></div>
+
+  <script src="https://cientistaspatentes.com.br/chatroom/Chatroom.js" />
+  </script>
+  <script type="text/javascript">
+    var chatroom = new window.Chatroom({
+      host: "https://52.41.36.82:5005",
+      title: "Chat with Mike",
+      container: document.querySelector(".chat-container"),
+      welcomeMessage: "Hi, I am Mike. How may I help you?",
+      speechRecognition: "en-US",
+      voiceLang: "en-US"
+    });
+    chatroom.openChat();
+  </script>
+</body>
+
+</html>

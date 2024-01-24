@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Posso mostrar a minha invenção para investidores, antes de protegê-la?",
+    "intent": "periodo_de_graca",
+    "intent_prediction": {
+      "name": "invencao_permissão_de_divulgação",
+      "confidence": 0.5083827972412109
+    }
+  }
+]
