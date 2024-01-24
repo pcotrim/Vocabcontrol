@@ -2,105 +2,261 @@ version: "3.1"
 
 intents:
 
-    - patente
-    - periodo_de_graca
-    - como_proteger_invencao
-    - cumprimento
-    - cumprimento_despedida
-    - cumprimento_agradecimento
-    - pergunta_bot
-    - greet
-    - informa_numero
-    - informa_situacao
-    - fallback
-    - informa_data
+    - perguntar_patente
+    - perguntar_periodo_de_graca_protecaoo_de_invencao
+    - perguntar_como_proteger_invencao
+    - perguntar_patente_expectativa_direito
+    - perguntar_INPI
+    - perguntar_patente_deposito_de_pedido_busca_previa
+    - perguntar_patente_territorialidade
+    - perguntar_patente_verde
+    - perguntar_patente_exame_prioritario_de_pedido
+    - perguntar_materia_nao_patenteavel
+    - perguntar_patente_busca_de_deposito_de_pedido_internet
+    - perguntar_patente_deposito_de_pedido_Internacioal
+    - perguntar_patente_deposito_de_pedido_no_brasil
+    - perguntar_patente_patenteabilidade_de_software
+    - perguntar_patente_vigencia
+    - perguntar_patente_elaboracao_de_pedido
+    - perguntar_patente_deposito_de_pedido_sigilo
+    - perguntar_patente_documento_para_pedido
+    - perguntar_patente_modalidade
+    - perguntar_diferenca_descoberta_invencao_inovacao
+    - perguntar_patente_expedicao
+    - perguntar_patente_matéria_patenteavel
+    - perguntar_patente_de_modelo_de_utilidade
+    - perguntar_patente_de_invencao
+    - perguntar_patente_elegibilidade_de_depositante
+    - perguntar_propriedade_industrial
+    - perguntar_sistema_de_patentes_de_invencao_beneficio
+    - perguntar_estado_da_tecnica
+    - perguntar_patente_modelo_de_deposito_de pedido_acesso
+    - perguntar_patente_elegibilidade_de_deposito_de_pedido
+    - perguntar_patente_titular_direitos
+    - perguntar_invencao_permissao_de_divulgacao
+    - perguntar_patente_anuidade_de_pedido
+    - perguntar_transferencia_de_tecnologia
+    - perguntar_royalty_propriedade_intelectual
+    - perguntar_propriedade_intelectual
+    - perguntar_patente_titularidade_proprietário_legal
+    - perguntar_wipo_das
+    - perguntar_inovacao_tecnologica
+    - perguntar_titularidade_de_patente_transferencia
+    - perguntar_deposito_pedido_de_ patente_custos
+    - perguntar_deposito_de_pedido_de_patente_acompanhamento
+    - perguntar_patente_prescricao_de_direitos
+    - perguntar_patente_deposito_de_pedido_etapas_de_concessao
+    - perguntar_patente_depósito_de_pedido_internacionalizacao
+    - perguntar_inovacao
+    - cumprimentar_chegada
+    - cumprimentar_despedida
+    - cumprimentar_agradecimento
+    - perguntar_bot
+
 
 actions:
 
-    - utter_patente
-    - utter_periodo_de_graca
-    - utter_como_proteger_invencao
-    - utter_cumprimento
-    - utter_cumprimento_despedida
-    - utter_cumprimento_agradecimento
-    - utter_pergunta_bot
-    - utter_greet
-    - utter_informa_numero
-    - action_show_name
-    - action_default_fallback
-    - action_informa_situacao
-    - action_informa_data
+    - utter_perguntar_patente
+    - utter_perguntar_periodo_de_graca_protecaoo_de_invencao
+    - utter_perguntar_como_proteger_invencao
+    - utter_perguntar_patente_expectativa_direito
+    - utter_perguntar_INPI
+    - utter_perguntar_patente_deposito_de_pedido_busca_previa
+    - utter_perguntar_patente_territorialidade
+    - utter_perguntar_patente_verde
+    - utter_perguntar_patente_exame_prioritario_de_pedido
+    - utter_perguntar_materia_nao_patenteavel
+    - utter_perguntar_patente_busca_de_deposito_de_pedido_internet
+    - utter_perguntar_patente_deposito_de_pedido_Internacioal
+    - utter_perguntar_patente_deposito_de_pedido_no_brasil
+    - utter_perguntar_patente_patenteabilidade_de_software
+    - utter_perguntar_patente_vigencia
+    - utter_perguntar_patente_elaboracao_de_pedido
+    - utter_perguntar_patente_deposito_de_pedido_sigilo
+    - utter_perguntar_patente_documento_para_pedido
+    - utter_perguntar_patente_modalidade
+    - utter_perguntar_diferenca_descoberta_invencao_inovacao
+    - utter_perguntar_patente_expedicao
+    - utter_perguntar_patente_matéria_patenteavel
+    - utter_perguntar_patente_de_modelo_de_utilidade
+    - utter_perguntar_patente_de_invencao
+    - utter_perguntar_patente_elegibilidade_de_depositante
+    - utter_perguntar_propriedade_industrial
+    - utter_perguntar_sistema_de_patentes_de_invencao_beneficio
+    - utter_perguntar_estado_da_tecnica
+    - utter_perguntar_patente_modelo_de_deposito_de pedido_acesso
+    - utter_perguntar_patente_elegibilidade_de_deposito_de_pedido
+    - utter_perguntar_patente_titular_direitos
+    - utter_perguntar_invencao_permissao_de_divulgacao
+    - utter_perguntar_patente_anuidade_de_pedido
+    - utter_perguntar_transferencia_de_tecnologia
+    - utter_perguntar_royalty_propriedade_intelectual
+    - utter_perguntar_propriedade_intelectual
+    - utter_perguntar_patente_titularidade_proprietário_legal
+    - utter_perguntar_wipo_das
+    - utter_perguntar_inovacao_tecnologica
+    - utter_perguntar_titularidade_de_patente_transferencia
+    - utter_perguntar_deposito_pedido_de_ patente_custos
+    - utter_perguntar_deposito_de_pedido_de_patente_acompanhamento
+    - utter_perguntar_patente_prescricao_de_direitos
+    - utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao
+    - utter_perguntar_patente_depósito_de_pedido_internacionalizacao
+    - utter_perguntar_inovacao
+    - utter_cumprimentar_chegada
+    - utter_cumprimentar_despedida
+    - utter_cumprimentar_agradecimento
+    - utter_perguntar_bot
 
-entities:
-  - name
-  - ped_number
-  - data
-
-slots:
-  ped_number:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: ped_number
-
-  name:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: name
-
-  data:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: data
 
 responses:
 
-    utter_informa_data:
-    - text: "Data: {data}"
+    utter_perguntar_patente:
+    - text: "Patente é um título de propriedade temporária sobre uma invenção ou modelo de utilidade, outorgado pelo Estado aos inventores ou autores ou outras pessoas físicas ou jurídicas detentoras de direitos sobre a criação. Com este direito, o inventor ou o detentor da patente tem o direito de impedir terceiros, sem o seu consentimento, de produzir, usar, colocar a venda, vender ou importar produto objeto de sua patente e/ ou processo ou produto obtido diretamente por processo por ele patenteado. Em contrapartida, o inventor se obriga a revelar detalhadamente todo o conteúdo técnico da matéria protegida pela patente." 
 
-    utter_informa_situacao:
-    - text: "Pedido: {ped_number}"
+    utter_perguntar_periodo_de_graca_protecaoo_de_invencao:
+    - text: "O período de graça possibilita a proteção de um invento divulgado, até 12 meses antes do depósito, em alguns casos especiais. Especificamente, não será considerada como estado da técnica a divulgação de Invenção ou Modelo de Utilidade, quando ocorrida durante os doze meses que precederem a data de depósito ou a data da prioridade mais antiga do Pedido de Patente, se essa divulgação for promovida pelo próprio inventor ou por terceiros, com base em informações obtidas direta ou indiretamente do inventor ou em decorrência de atos por este realizados. Cabe observar que o INPI poderá exigir declaração do inventor relativo à divulgação, acompanhada de provas ou não, indicando a forma, local e data de ocorrência da divulgação. Ainda, o inventor poderá indicar essas informações por ocasião do depósito do pedido." 
 
-    utter_informa_numero:
-    - text: "Número gravado: {ped_number}"
+    utter_perguntar_como_proteger_invencao:
+    - text: "A patente é o instrumento correto para isso. Portanto, é necessário depositar um pedido no INPI, o qual, depois de devidamente analisado, poderá se tornar uma patente, com validade em todo o território nacional." 
 
-    utter_greet:
-    - text: "Olá {name}! Como vai você?"
-    - text: "Olá {name} :)"
+    utter_perguntar_patente_expectativa_direito:
+    - text: "1) O simples depósito do pedido de patente não confere ao requerente os direitos a ela inerentes. Este será submetido a um determinado procedimento para pverificação do preenchimento dos requsitos legais, nos termos dos artigos 19 a 37 da Lei 9279/96 e após tal avaliação será deferida ou não a concessão da patente. Tl somente proferida tal decisão, o requerente passará a ostentar posição de Titular do direito, podendo impedidr a utilização da invnção sem seu consentimento. De fato, o depósito gera expectativa de direito ao depositante, pois havendo eploração doinvento, mesmo antes da concessão do privilégio, ms após o depósito, caberá direito de indenização em relação a este período. Repísa-se e, entretanto, que apenas direito concreto à reparação pelos danos causados se obtida a patente reuerida. 2) O que o depositante possui é uma expectativa de direito que somente se confirmará caso venha a obter a patente. Caso o depositante esteja sofrendo prejuízos por concorrência desleal de alguém que esteja produzindo o mesmo objeto de sua invenção, o depositante poderá contatar tal concorrente notificando-o de que, caso o concorrente insista na prática desleal ele poderá, quando obtiver a Carta-Patente, impetrar uma ação judicial de indenização por perdas e danos, que poderão ser contabilizados a partir da data de publicação do pedido de patente. Neste caso, a publicação antecipada é útil para efeitos da determinação desta data. Entretanto, conforme estabelece o parágrafo primeiro do artigo 44 da LPI, caso o infrator obtenha conhecimento do conteúdo do pedido depositado antes mesmo de sua publicação, a indenização deverá considerar a data de início da exploração." 
 
-    utter_patente:
-    - text: "Patente é um título de propriedade temporária sobre uma invenção ou modelo de utilidade, outorgado pelo Estado aos inventores ou autores ou outras pessoas físicas ou jurídicas detentoras de direitos sobre a criação. Com este direito, o inventor ou o detentor da patente tem o direito de impedir terceiros, sem o seu consentimento, de produzir, usar, colocar a venda, vender ou importar produto objeto de sua patente e/ ou processo ou produto obtido diretamente por processo por ele patenteado. Em contrapartida, o inventor se obriga a revelar detalhadamente todo o conteúdo técnico da matéria protegida pela patente."
+    utter_perguntar_INPI:
+    - text: "O Instituto Nacional da Propriedade Industrial - INPI, é uma autarquia federal brasileira, criada em 1970, vinculada ao Ministério do Desenvolvimento, Indústria e Comércio Exterior (MDIC). Localiza-se na cidade do Rio de Janeiro (RJ). Tem como finalidade principal (baseado na Lei 9.279/96 - Lei da Propriedade Industrial), executar, no âmbito nacional, as normas que regulam a Propriedade Industrial, tendo em vista a sua função social, econômica, jurídica e técnica. É também sua atribuição se pronunciar quanto à conveniência de assinatura, ratificação e denúncia de convênios, tratados e acordos sobre propriedade industrial. O INPI é responsável pela Concessão de Marcas, Patentes, Transferência de Tecnologia (averbação de contratos), Registro de Desenho industrial, Indicação geográfica, Programa de Computador e Topografia de Circuito Integrado." 
 
-    utter_periodo_de_graca:
-    - text: "O período de graça possibilita a proteção de um invento divulgado, até 12 meses antes do depósito, em alguns casos especiais. Especificamente, não será considerada como estado da técnica a divulgação de Invenção ou Modelo de Utilidade, quando ocorrida durante os doze meses que precederem a data de depósito ou a data da prioridade mais antiga do Pedido de Patente, se essa divulgação for promovida pelo próprio inventor ou por terceiros, com base em informações obtidas direta ou indiretamente do inventor ou em decorrência de atos por este realizados. Cabe observar que o INPI poderá exigir declaração do inventor relativo à divulgação, acompanhada de provas ou não, indicando a forma, local e data de ocorrência da divulgação. Ainda, o inventor poderá indicar essas informações por ocasião do depósito do pedido."
+    utter_perguntar_patente_deposito_de_pedido_busca_previa:
+    - text: "Uma invenção ou modelo de utilidade para ser passível de proteção deve ser comparada ao que já existe no chamado estado da técnica, o qual compreende, por exemplo, documentos de patente brasileiros e estrangeiros. Assim, o mais aconselhável para quem deseja depositar um pedido de patente no INPI é fazer preliminarmente uma busca nos Bancos de Patentes, o que lhe serve de orientação, pois evita perda de tempo e de recursos, caso sua invenção já esteja descrita no estado da técnica, podendo ainda orientar sobre como melhor redigir um pedido de patente. Entretanto, não se trata de um pré-requisito para o depósito do pedido de patente no INPI." 
 
-    utter_como_proteger_invencao:
-    - text: "A patente é o instrumento correto para isso. Portanto, é necessário depositar um pedido no INPI, o qual, depois de devidamente analisado, poderá se tornar uma patente, com validade em todo o território nacional."
+    utter_perguntar_patente_territorialidade:
+    - text: "A patente é um direito de propriedade temporário concedido pelo Estado que segue o princípio da territorialidade, ou seja, é válida somente dentro do território do país na qual foi concedida para impedir a exploração de sua invenção naquela região. Existem meios para estender a patente para outros territórios através de Tratados Internacionais, mas a concessão fica a critério de cada país signatário do tratado de forma independente." 
 
+    utter_perguntar_patente_verde:
+    - text: "As patentes verdes referem-se a pedidos de depósitos nas categorias de energias sustentáveis, transportes, conservação de energia, gerenciamento de resíduos e agricultura, que tem exame prioritário no INPI para garantir maior agilidade no processo de análise do pedido de depósito." 
 
-    utter_cumprimento:
-    - text: "Olá! {name}"
-    - text: "Oi! {name}"
-    - text: "Tudo bem {name}?"
-    - text: "Em que posso ajudar sobre o assunto de patentes {name}?"
+    utter_perguntar_patente_exame_prioritario_de_pedido:
+    - text: "Há diferentes formas de ter uma resposta mais rápida do INPI. Para isso, o seu pedido de patente deve se enquadrar em uma das categorias elegíveis de Trâmite Prioritário, tais como Depositante idoso, Depositante MEI, ME ou EPP, Depositante acusa terceiros de contrafação, Tecnologia verde, Tecnologia para tratamento de saúde etc. Embora não acelere o exame do pedido em si, a Opinião Preliminar sobre a Patenteabilidade permite que o depositante obtenha uma busca e uma avaliação preliminar antecipada sobre seu pedido. Se o resultado da Opinião Preliminar for positivo, indica que o pedido tem grandes chances de ser deferido e se tornar uma patente. Se for negativo, permite que o depositante faça as modificações necessárias no pedido para aumentar as chances do pedido ser deferido." 
 
-    utter_cumprimento_despedida:
-    - text: "Tchau, espero ter ajudado!"
-    - text: "Volte sempre!"
+    utter_perguntar_materia_nao_patenteavel:
+    - text: "Art. 10 da LPI. Não se considera invenção nem modelo de utilidade: I - descobertas, teorias científicas e métodos matemáticos, II - concepções puramente abstratas, III - esquemas, planos, princípios ou métodos comerciais, contábeis, financeiros, educativos, publicitários, de sorteio e de fiscalização, IV - as obras literárias, arquitetônicas, artísticas e científicas ou qualquer criação estética, V - programas de computador em si, VI - apresentação de informações, VII - regras de jogo, VIII - técnicas e métodos operatórios ou cirúrgicos, bem como métodos terapêuticos ou de diagnóstico, para aplicação no corpo humano ou animal, e IX - o todo ou parte de seres vivos naturais e materiais biológicos encontrados na natureza, ou ainda que dela isolados, inclusive o genoma ou germoplasma de qualquer ser vivo natural e os processos biológicos naturais. Art. 18. Não são patenteáveis: I - o que for contrário à moral, aos bons costumes e à segurança, à ordem e à saúde públicas, II - as substâncias, matérias, misturas, elementos ou produtos de qualquer espécie, bem como a modificação de suas propriedades físico-químicas e os respectivos processos de obtenção ou modificação, quando resultantes de transformação do núcleo atômico, e III - o todo ou parte dos seres vivos, exceto os micro-organismos transgênicos que atendam aos três requisitos de patenteabilidade - novidade, atividade inventiva e aplicação industrial - previstos no art. 8º e que não sejam mera descoberta. Parágrafo único. Para os fins desta Lei, micro-organismos transgênicos são organismos, exceto o todo ou parte de plantas ou de animais, que expressem, mediante intervenção humana direta em sua composição genética, uma característica normalmente não alcançável pela espécie em condições naturais." 
 
-    utter_cumprimento_agradecimento:
-    - text: "De nada! "
-    - text: "Por nada!"
-    - text: "Estou à disposição!"
+    utter_perguntar_patente_busca_de_deposito_de_pedido_internet:
+    - text: "1. Para acessar os pedidos de patente depositados junto ao INPI, a busca deve ser realizada na base de patentes do INPI (https://www.gov.br/inpi/pt-br). Para acessar os pedidos de patentes depositados em outros países, os sítios de busca mais indicados são: www.espacenet.com e patentscope.wipo.int. 2. A base de dados Derwent World Patents ( http://dii.derwent.com ), oferece acesso on-line a mais de 10 milhões de resumos de patentes de 40 países, incluindo as brasileiras, catalogadas desde 1966. Os resumos são claros e concisos e contêm indexação por palavras-chaves , que asseguram busca rápida e acurada. Esta base é conectada ao Web-of-Science (WoS), podendo inclusive ser acessada através de qualquer patente citada em artigo do WoS. As informações sobre as patentes podem ser procuradas de várias maneiras: pelos nomes dos inventores ou titulares, por suas instituições, pelo número da patente ou código de classificação, ou por palavras-chave que constem de seus títulos e resumos. Também podem ser encontradas as citações de cada patente. Além de ser um poderoso instrumento de pesquisa de patentes, o Derwent World Patents permite o acompanhamento do processo mundial de geração de tecnologia. Derwent Innovations Index." 
 
-    utter_pergunta_bot:
-    - text: "Eu sou o chatbot PatentIA."
-    - text: "Eu sou um bot que aborda sobre o domínio das patentes."
-    - text: "Eu sou um bot que aborda sobre a área de conhecimento patentes."
-    - text: "Eu sou um bot treinado em machine learning que tem algum conhecimento sobre patentes."
-    - text: "Sou um bot e posso responder algumas perguntas sobre patentes."
+    utter_perguntar_patente_deposito_de_pedido_Internacioal:
+    - text: "1) Há duas formas de requerer a proteção de invenções e de modelos de utilidade em outros países: diretamente no país onde se deseja obter a proteção - via Convenção da União de Paris (CUP) - ou através do Tratado de Cooperação em matéria de Patentes (PCT). A CUP estabelece o direito de prioridade, ou seja, baseado num primeiro depósito de patente em um dos Estados signatários, o solicitante pode, num período de até 12 meses, solicitar a proteção em qualquer dos outros Estados signatários. As solicitações posteriores serão consideradas como se tivessem sido depositadas no mesmo dia da primeira solicitação. O PCT é um tratado multilateral, administrado pela OMPI/WIPO (Organização Mundial da Propriedade Intelectual), que permite requerer a proteção patentária de uma invenção, simultaneamente, em um grande número de países, por intermédio de um único depósito, chamado Depósito Internacional de Patente. 2) Neste caso, é preciso depositar um pedido equivalente no país ou região onde se deseja obter a patente. O pedido depositado no Brasil deverá ser traduzido para o idioma do país/região onde se deseja depositar e deverá ser nomeado um procurador para representar a empresa naquele país. O procedimento de depósito em diferentes países pode ser simplificado, usando o Tratado de Cooperação de Patentes (PCT), no qual o INPI atua como escritório receptor e realiza busca/exame preliminar." 
+
+    utter_perguntar_patente_deposito_de_pedido_no_brasil:
+    - text: "Há duas formas de depósito de um pedido de patente. Pedidos de patente (nacionais) devem ser depositados exclusivamente de forma eletrônica. Sendo assim, todos os documentos anexados aos formulários eletrônicos de pedido de patente de invenção e de modelo de utilidade, certificado de adição de invenção ou petição deverão ser enviados ao INPI como documentos digitais ou digitalizados. A partir de 20 de outubro de 2014, o sistema ePCT-filing passou a ser o meio indicado ao depósito de pedidos internacionais (ou PCT) e envio de documentos associados. O e-PCT é um serviço online da OMPI que permite aos Escritórios receptores, Autoridades Internacionais e usuários cadastrados, acesso eletrônico seguro aos pedidos internacionais depositados através do PCT." 
+
+    utter_perguntar_patente_patenteabilidade_de_software:
+    - text: "1) Não é considerada invenção o código fonte do programa que traga o benefício de maior velocidade, menor tamanho (seja do código fonte ou do espaço ocupado em memória), modularidade, entre outros, apesar de estes serem efeitos técnicos. [...] Uma criação com aplicação industrial implementada em computador pode ser considerada invenção caso resolva um problema técnico e alcance efeitos técnicos que não digam respeito unicamente ao modo como este programa de computador é escrito. 2) O programa de computador em si é entendido como a expressão de um conjunto organizado de instruções em linguagem natural ou codificada, referente aos elementos literais da criação, tal como o código fonte. O programa de computador em si não é considerado invenção, portanto, não é objeto de proteção por patente por ser mera expressão de uma solução técnica, sendo intrinsecamente dependente da linguagem de programação. O regime de proteção apropriado ao programa de computador em si é o conferido às obras literárias pela legislação de direitos autorais e conexos, conforme indicado na Lei 9.609/98, sendo o INPI o órgão responsável pelo Registro do Programa de Computador (consultar no portal do INPI: Programa de Computador). O inciso V do art. 10 da LPI, ao mencionar que o programa de computador em si não é considerado invenção, apenas separa e distingue os sistemas de proteção quando se está diante de criações que envolvam programas de computador. Criações envolvendo programa de computador possuem duas formas de proteção: por direito autoral, para o programa de computador em si, e por patentes, para processos ou produtos que solucionem problemas técnicos alcançando efeitos técnicos não relacionados exclusivamente a mudanças no código." 
+
+    utter_perguntar_patente_vigencia:
+    - text: "A vigência das patentes de invenção é de 20 anos e dos modelos de utilidade é de 15 anos, contados a partir da data de depósito do pedido." 
+
+    utter_perguntar_patente_elaboracao_de_pedido:
+    - text: "O INPI expediu as Instruções Normativas 30/2013 (IN 30/13) e 31/2013 (IN 31/2013), disponível no portal do INPI, explicando como elaborar os pedidos de Patentes. Deve-se ler atentamente a IN 30/13 e IN 31/13 antes de começar a redigir o Pedido de Patente estudando bem os documentos encontrados na busca de anterioridades. Deve-se formular o pedido nos mesmos moldes, tendo em mente que se deve mencionar no relatório descritivo a existência dos pedidos anteriores (estado da técnica), brasileiros ou não, assim como fornecer informações sobre objetos ou processos semelhantes ao do objeto do pedido. Deve-se compará-los com o objeto, destacando os avanços técnicos introduzidos pela sua Invenção ou Modelo de Utilidade. Quanto ao conteúdo técnico, o relatório deve descrever o objeto ou produto ou processo para o qual se requer a proteção. A descrição deve ser feita de forma a permitir que uma pessoa especializada possa compreender e colocar em prática a tecnologia. As reivindicações devem caracterizar as peculiaridades do objeto do pedido para as quais se requer a proteção legal. São elas que estabelecem e delimitam os direitos da patente. A listagem de sequencias para pedidos da área biotecnológica, devem ser incluídas para possibilitar a aferição da suficiência descritiva de que trata o Art. 24 da LPI. Os desenhos, quando necessários, têm a finalidade de completar a descrição, esclarecendo ou delimitando o conteúdo da invenção. Finalmente, o resumo deve ser uma descrição clara, objetiva e sucinta do objeto do pedido de patente. A ferramenta Minha Primeira patente pode ajudar na redação do pedido de patente." 
+
+    utter_perguntar_patente_deposito_de_pedido_sigilo:
+    - text: "Todos os pedidos tramitam no mais estrito sigilo durante o período de dezoito meses (salvo pedido de publicação antecipada pelo depositante) até o período da publicação na Revista de Propriedade Industrial (RPI)." 
+
+    utter_perguntar_patente_documento_para_pedido:
+    - text: "Um requerimento do pedido de patente por meio do formulário [Depósito de Pedido de Patente[ acompanhado do conteúdo técnico - relatório descritivo, reivindicações, listagem de sequências (se for o caso), desenhos (se for o caso), resumo e a guia de recolhimento (GRU), devidamente paga. Esta guia é gerada eletronicamente e acessada através do portal do INPI (www.gov.br/inpi/pt-br). O INPI tem diversos serviços realizados via Internet, que dependem da criação de login e senha. Para emitir a guia, o usuário deve, portanto, efetuar antecipadamente seu cadastro, acessando [Cadastro no e-INPI] na página inicial do portal." 
+
+    utter_perguntar_patente_modalidade:
+    - text: "Em função das diferenças existentes entre as patentes, elas poderão se enquadrar nas seguintes naturezas ou modalidades: Patente de Invenção (antigo PI) - Concepção resultante da capacidade de criação do homem que represente uma solução para um problema técnico dentro de um determinado campo tecnológico e que possa ser fabricada. A invenção deve atender aos requisitos de atividade inventiva, novidade e aplicação industrial. Modelo de Utilidade (antigo MU) - Objeto de uso prático, ou parte deste, suscetível de aplicação industrial, que apresente nova forma ou disposição, envolvendo ato inventivo, que resulte em melhoria funcional no seu uso ou em sua fabricação. Existe também o Certificado de Adição de Invenção (antigo C1, C2, etc), que consiste em um aperfeiçoamento ou desenvolvimento introduzido no objeto da invenção mesmo que destituído de atividade inventiva, desde que a matéria se inclua no mesmo conceito inventivo. Sua vigência é a mesma da Patente de Invenção." 
+
+    utter_perguntar_diferenca_descoberta_invencao_inovacao:
+    - text: "1) Descoberta, invenção e inovação são termos que podem parecer sinônimos mas, na realidade, há diferença entre eles. A descoberta, determinada pela capacidade de observação do homem, consiste na revelação de um fenômeno existente na natureza que, até o momento, foi ignorado. São exemplos: lei da gravidade, propriedades físico-químicas, genes, proteínas e metais - como o ferro. A invenção é uma concepção resultante do exercício da capacidade de criação do homem que, manipulando ou interferindo na natureza, consegue elaborar uma solução para um problema específico de algum campo das necessidades humanas. Isto aconteceu com o telescópio, a dinamite e a fibra óptica. 2) Denomina-se Criação todo e qualquer desenvolvimento tecnológico que possa gerar um produto, processo ou aperfeiçoamento incremental. A inovação é um produto novo ou melhorado quando introduzido no mercado. Também podem ser modelos de negócios e métodos organizacionais implementados nas operações das empresas. Para ter inovação, é preciso que a tecnologia ou invenção seja implementada e chegue ao mercado consumidor. Assistentes virtuais, drones entregadores e o acréscimo de funcionalidades e recursos podem ser citados como exemplos." 
+
+    utter_perguntar_patente_expedicao:
+    - text: "Mesmo após o deferimento, o pedido ainda não é uma patente. É necessário que o depositante solicite a expedição da carta patente, no prazo de 60 dias (prazo ordinário) a partir da publicação do deferimento na RPI (código de despacho 9.1). O referido pagamento poderá também ser realizado nos 30 dias subsequentes (prazo extraordinário), mediante o pagamento da retribuição específica. A solicitação de expedição de carta patente é um serviço dispensado de petição, bastando gerar e pagar a GRU. Se o pagamento for efetuado no prazo ordinário, deverá ser utilizada GRU de código 212 e no prazo extraordinário, GRU de código 213. De posse da Guia de Recolhimento da União (GRU) emitida pelo Sistema e-INPI, o usuário deverá efetuar o pagamento da GRU, obrigatoriamente dentro do período indicado (prazo ordinário ou extraordinário), sob pena do serviço solicitado não ser considerado. Após o pagamento desta taxa será publicado o despacho de código 16.1, referente a Concessão de Patente ou Certificado de Adição de Invenção. No caso do não pagamento da retribuição específica para expedição de carta patente no prazo estipulado o pedido de patente será arquivamento definitivamente, independente do mesmo ter sido deferido (despacho de código 9.1)." 
+
+    utter_perguntar_patente_matéria_patenteavel:
+    - text: "É patenteável a matéria que não incida nas proibições legais e que atender aos requisitos legais dos Artigos 8º, 9º, 11, 13, 14 e 15 e as condições dispostas nos artigos 24 e 25 da Lei de Propriedade Industrial nº 9279/96 - LPI. A Invenção deve ser provida de novidade, utilização industrial, atividade inventiva, o Modelo de Utilidade deve ser provido de novidade, utilização industrial, ato inventivo e ambos devem descrever clara e suficientemente o objeto do pedido e ter reivindicações fundamentadas no relatório descritivo, caracterizando as particularidades do pedido e definindo, de modo claro e preciso a matéria objeto de proteção. A proteção do Modelo de Utilidade só pode ser concedida a um objeto de uso prático que apresente nova forma ou disposição (estando os processos excluídos) envolvendo ato inventivo (não decorra de maneira comum ou vulgar do estado da técnica), analisada por um técnico no assunto, resultando em melhoria funcional no seu uso ou fabricação, sendo os desenhos obrigatórios." 
+
+    utter_perguntar_patente_de_modelo_de_utilidade:
+    - text: "Um modelo de utilidade é um objeto de uso prático, ou parte deste, suscetível de aplicação industrial, que apresente nova forma ou disposição, envolvendo ato inventivo, que resulte em melhoria funcional no seu uso ou em sua fabricação. Este objeto deve ser tridimensional (como instrumentos, utensílios e ferramentas) e suscetível de aplicação industrial. A diferenciação entre Patente de Invenção e Patente de Modelo de Utilidade é de suma importância para quem deseja proteger sua criação. Para determinar a definição da natureza correta, é necessário avaliar se há um aperfeiçoamento de efeito ou funcionalidade - caso de proteção como Patente de Modelo de Utilidade - ou um novo efeito técnico-funcional - caso de proteção como Patente de Invenção. O inventor poderá identificar melhor a natureza (Invenção ou Modelo de Utilidade) da sua criação a partir do conhecimento prévio do estado da técnica, de modo a requerer devidamente a proteção." 
+
+    utter_perguntar_patente_de_invencao:
+    - text: "Uma definição possível para invenção patenteável é a concepção resultante do exercício da capacidade de criação do homem que represente uma solução nova para um problema técnico existente dentro de um determinado campo tecnológico e que possa ser fabricada. As invenções podem ser referentes a produtos industriais (compostos, composições, objetos, aparelhos, dispositivos, etc.) e a atividades industriais (processos, métodos, etc.). As Patentes de Invenção conferem proteção às criações de caráter técnico, visando um efeito técnico peculiar." 
+
+    utter_perguntar_patente_elegibilidade_de_depositante:
+    - text: "Podem praticar atos no INPI as pessoas físicas ou jurídicas domiciliadas no país, independentemente de possuírem ou não procurador. Requerentes domiciliados no exterior devem constituir um representante legal no Brasil, por meio de instrumento de procuração que inclua poderes para receber citações judiciais, conforme estabelece o art. 217 da LPI." 
+
+    utter_perguntar_propriedade_industrial:
+    - text: "A Propriedade Industrial segundo a Convenção de Paris de 1883 (art. 1 § 2), é o conjunto de direitos que compreende as patentes de invenção, os modelos de utilidade, os desenhos ou modelos industriais, as marcas de fábrica ou de comércio, as marcas de serviço, o nome comercial e as indicações de proveniência ou denominações de origem, bem como a repressão da concorrência desleal." 
+
+    utter_perguntar_sistema_de_patentes_de_invencao_beneficio:
+    - text: "Basicamente, o sistema promove o progresso da técnica por dois motivos: ao constituir um incentivo ao inventor em prosseguir em suas pesquisas uma vez garantida a proteção aos investimentos realizados, e em segundo lugar incentivando seus concorrentes a buscarem alternativas tecnológicas para conquistarem o mercado, sem recorrer à licenças de exploração de patentes. Com a divulgação da invenção pelo documento de patente, a sociedade se beneficia com o conhecimento de uma tecnologia que de outra forma permaneceria como segredo industrial." 
+
+    utter_perguntar_estado_da_tecnica:
+    - text: "De acordo com a Lei de Propriedade Industrial (LPI): Art. 11. A invenção e o modelo de utilidade são considerados novos quando não compreendidos no estado da técnica. § 1º O estado da técnica é constituído por tudo aquilo tornado acessível ao público antes da data de depósito do pedido de patente, por descrição escrita ou oral, por uso ou qualquer outro meio, no Brasil ou no exterior, ressalvado o disposto nos arts. 12, 16 e 17. § 2º Para fins de aferição da novidade, o conteúdo completo de pedido depositado no Brasil, e ainda não publicado, será considerado estado da técnica a partir da data de depósito, ou da prioridade reivindicada, desde que venha a ser publicado, mesmo que subseqüentemente. § 3º O disposto no parágrafo anterior será aplicado ao pedido internacional de patente depositado segundo tratado ou convenção em vigor no Brasil, desde que haja processamento nacional." 
+
+    utter_perguntar_patente_modelo_de_deposito_de pedido_acesso:
+    - text: "1) Inform. [Modelo é um] modo simplificado de representar um fenômeno, servindo como base de referência para um estudo analítico. 2) Os pesquisadores (as) poderão ter acesso a um modelo fazendo uma busca simples no site do INPI." 
+
+    utter_perguntar_patente_elegibilidade_de_deposito_de_pedido:
+    - text: "O invento deve ser original no nível internacional, apresentar potencial comercial e não  ser óbvio. Custo e dedicação significativos são requeridos dos escritórios de propriedade intelectual e do inventor para depositar uma patente. Muitas invenções nunca são  patenteadas, algumas são retidas até que se completem ou o mercado esteja pronto para recebê-las, e só algumas são processadas rapidamente. Portanto, várias questões devem receber resposta antes que uma tecnologia seja patenteada. Originalidade e viabilidade técnica. Foi efetuada busca de patentes? O invento é original no nível internacional? Há um protótipo para demonstração? Maturidade do invento. A tecnologia não é prematura, dado o mercado atual? Os possíveis interessados perceberão a sua utilidade? O invento está pronto para produção em escala ou terá que ser desenvolvido pelo licenciado? Quem deverá investir mais para torna-lo fabricável? Mercado potencial. Alguém precisa de tal invento? Há produtos similares no mercado? Em caso positivo, esta invenção é mais barata, melhor que os similares ou apresenta outras vantagens sobre eles? Quem são os possíveis clientes para o invento? Quais são os diferentes mercados para o invento? Há estimativa de mercado atual e futuro? Licenciamento. O protótipo pode ser usado para facilitar o licenciamento? O inventor está interessado em demonstrar o invento aos potenciais licenciadores? Custos. Será necessária patente internacional? O faturamento previsto cobrirá os custos de patenteamento? Dificultadores. Será possível impor e controlar o uso da patente? Necessita de aprovação ou certificação governamental?" 
+
+    utter_perguntar_patente_titular_direitos:
+    - text: "O titular da patente tem o direito de impedir terceiros, sem consentimento, de produzir, colocar à venda, usar, importar produto objeto da patente ou processo ou produto obtido diretamente por processo patenteado (capítulo V, Título I da LPI). Terceiros podem fazer uso da invenção somente com a permissão do titular (licença)." 
+
+    utter_perguntar_invencao_permissao_de_divulgacao:
+    - text: "Após o depósito do pedido de patente, o conteúdo do pedido permanece em sigilo por 18 meses. Caso seja de interesse dos inventores ou de instituições/ empresas envolvidas manter o conteúdo em sigilo por esses 18 meses, não se deve divulgar. Porém, logo após o depósito do pedido de patente, as divulgações podem ser realizadas, em qualquer meio, sem que sejam consideradas pertencentes ao estado da técnica para avaliação de novidade e/ou atividade inventiva da tecnologia." 
+
+    utter_perguntar_patente_anuidade_de_pedido:
+    - text: "O depositante do pedido e o titular da Patente estarão sujeitos ao pagamento de retribuição anual, denominadas anuidades. As anuidades deverão ser pagas a partir do segundo aniversário do pedido. Aí começa o prazo (3 meses) para pagamento da anuidade (que é chamada de terceira anuidade, pois é devida no início do terceiro ano).Perdendo este prazo, são concedidos mais 6 meses, mas o valor a ser pago também é maior. Deixar de fazê-lo vai acarretar o arquivamento do pedido ou patente." 
+
+    utter_perguntar_transferencia_de_tecnologia:
+    - text: "Tratando-se de um título legal de propriedade, a patente pode ser licenciada ou cedida para terceiros. O contrato de transferência de tecnologia que envolve direito de propriedade é formulado através de uma licença exclusiva ou não. Através destes direitos exclusivos, as empresas conseguem uma melhor posição de mercado, ganhando tempo e experiência para testar e comercializar os produtos. A transferência de tecnologia entre empresas e instituições de pesquisa (IES, ICT) tem sido impulsionada devido à crescente importância do conhecimento para o avanço tecnológico e competitividade. Com foco em tecnologias geradas no âmbito acadêmico, a transferência de tecnologia trata do processo que consiste de várias etapas: a revelação da invenção, o patenteamento, o licenciamento, e o uso comercial da tecnologia pelo licenciado. Caso a patente seja de uma universidade, essa recebe, geralmente, royalties em contrapartida. A Lei de Inovação estabelece várias formas de transferência de tecnologia entre as ICT e o setor produtivo entre os quais: 1) a comercialização de criação desenvolvida pela ICT, 2) a prestação de serviços, e 3) o estabelecimento de parcerias para o desenvolvimento de produtos e processos inovadores." 
+
+    utter_perguntar_royalty_propriedade_intelectual:
+    - text: "1) Movimento de knowhow, conhecimento técnico ou tecnologia de um ambiente organizacional para outro. 2) Tratando-se de um título legal de propriedade, a patente pode ser licenciada ou cedida para terceiros. O contrato de transferência de tecnologia que envolve direito de propriedade é formulado através de uma licença exclusiva ou não. Através destes direitos exclusivos, as empresas conseguem uma melhor posição de mercado, ganhando tempo e experiência para testar e comercializar os produtos. A transferência de tecnologia entre empresas e instituições de pesquisa (IES, ICT) tem sido impulsionada devido à crescente importância do conhecimento para o avanço tecnológico e competitividade. Com foco em tecnologias geradas no âmbito acadêmico, a transferência de tecnologia trata do processo que consiste de várias etapas: a revelação da invenção, o patenteamento, o licenciamento, e o uso comercial da tecnologia pelo licenciado. Caso a patente seja de uma universidade, essa recebe, geralmente, royalties em contrapartida. A Lei de Inovação estabelece várias formas de transferência de tecnologia entre as ICT e o setor produtivo entre os quais: 1) a comercialização de criação desenvolvida pela ICT, 2) a prestação de serviços, e 3) o estabelecimento de parcerias para o desenvolvimento de produtos e processos inovadores." 
+
+    utter_perguntar_propriedade_intelectual:
+    - text: "A propriedade intelectual se refere [...] às obras literárias, artísticas e científicas, às interpretações dos artistas intérpretes e às execuções dos artistas executantes, aos fonogramas e às emissões de radiodifusão, às invenções em todos os domínios da atividade humana, as descobertas científicas, os desenhos e modelos industriais, às marcas industriais, comerciais e de serviço, bem como às firmas comerciais e denominações comerciais, à proteção contra a concorrência desleal e [todos os outros direitos inerentes à atividade intelectual nos domínios industrial, científico, literário e artístico (Convenção que Institui a Organização Mundial da Propriedade Intelectual, assinada em Estocolmo, em 14 de julho de 1967, Artigo 2, § viii)." 
+
+    utter_perguntar_patente_titularidade_proprietário_legal:
+    - text: "A autoria da patente pertence a uma ou várias pessoa(s) física(s) denominada(s) inventor(es). Já o titular ou proprietário da patente é o depositante, que poderá ser o próprio inventor (pessoa física), ou seus herdeiros ou sucessores, ou a empresa (pessoa jurídica) para a qual trabalha ou para quem foi criado o invento. No meio acadêmico, geralmente a universidade (IES) ou a instituição de pesquisa (ICT) é o titular de uma patente.Ao titular da patente (seja ele o próprio inventor ou a instituição depositante), é concedido o direito de impedir terceiros de explorar, usar, comercializar, colocar à venda, etc., a sua criação." 
+
+    utter_perguntar_wipo_das:
+    - text: "O DAS (Digital Access Service) é um sistema gerenciado pela OMPI que possibilita o cumprimento dos requisitos da Convenção da União de Paris (CUP) relativos à comprovação da prioridade unionista em um ambiente eletrônico, através de biblioteca digital, e garante a troca segura desses documentos entre os escritórios participantes. O INPI faz parte do DAS desde 16 de fevereiro de 2018, como Escritório de Primeiro Depósito (EPD) ou Escritório Depositante e desde 1º de maio de 2018 como Escritório de Segundo Depósito (ESD). Como Escritório de Primeiro Depósito o serviço é fornecido pelo INPI por meio do requerimento de cópia oficial. Veja <a href=https://www.gov.br/inpi/pt-br/servicos/patentes/copia-de-documentos-de-patentes/copia-oficial-de-pedido-de-patente-em-meio-eletronico-wipo-das-e-delivery target=_blank>aqui</a> como solicitar uma cópia oficial de um pedido de patentes depositado no INPI-BR (Escritório de primeiro depósito - EPD). Como Escritório de segundo depósito (ESD), a comprovação utilizando o sistema DAS pode ser solicitada pelo requerente informando o código de acesso em campo específico do formulário eletrônico de depósito de patentes, ou tempestivamente, pelo serviço de outras petições (código 260 - Apresentação do Documento de Prioridade) acompanhado de esclarecimento contendo o Código de Acesso ao documento fornecido pela OMPI." 
+
+    utter_perguntar_inovacao_tecnologica:
+    - text: "Inovação tecnológica é a introdução no mercado de novos (ou significativamente melhorados) produtos ou serviços. Inclui alterações significativas nas suas especificações técnicas, componentes, materiais, software incorporado, ou outras características funcionais. Já a inovação do processo, é a implementação de novos (ou significativamente melhorados) processos de produção ou logística de bens ou serviços." 
+
+    utter_perguntar_titularidade_de_patente_transferencia:
+    - text: "A Patente é um bem do tipo intangível que pode conter valor agregado. Pode ser do interesse do depositante/titular transferir este direito para outrem. O tipo mais comum de transferência decorre de cessão ou venda do bem, mas também pode ser resultado da fusão, cisão, carta de arrematação, sucessão testamentária ou decisão judicial. A Patente pode ser cedida, total ou parcialmente, independentemente do tipo de pessoa, física ou jurídica. A Patente é um bem do tipo intangível que pode conter valor agregado. Pode ser do interesse do depositante/titular transferir este direito para outrem. O tipo mais comum de transferência decorre de cessão ou venda do bem, mas também pode ser resultado da fusão, cisão, carta de arrematação, sucessão testamentária ou decisão judicial. A Patente pode ser cedida, total ou parcialmente, independentemente do tipo de pessoa, física ou jurídica." 
+
+    utter_perguntar_deposito_pedido_de_ patente_custos:
+    - text: "Basicamente é o somatório das taxas correspondentes ao Depósito de Pedido de Patente de Invenção / Modelo de Utilidade, Pagamento das Anuidades, Pedido de Exame e Expedição de Carta-Patente. OBS: Ver Tabela de Retribuição no portal do INPI. Em caso de obstáculos processuais como exigências, subsídios ao exame, restaurações etc, novas retribuições serão acrescidas aos custos da patente." 
+
+    utter_perguntar_deposito_de_pedido_de_patente_acompanhamento:
+    - text: "Por meio de consulta na RPI eletrônica ou na Plataforma e-patentes. É facultado o cadastramento no sistema PUSH, disponível no portal, que não é a informação oficial do INPI." 
+
+    utter_perguntar_patente_prescricao_de_direitos:
+    - text: "Uma vez decorrido o período de vigência, na falta de pagamento de alguma anuidade e deixando de efetivar a restauração, no caso de não exploração de patente ou renúncia do titular, cessa os direitos do titular, tornando-se a invenção domínio público, de forma que qualquer pessoa dela se possa utilizar livremente. No caso de arquivamento definitivo de pedidos, esses também passam a fazer parte do estado da técnica.     " 
+
+    utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao:
+    - text: "Após o depósito do pedido, ele será submetido a um exame formal preliminar e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão SER pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária. Entretanto, no ato do depósito é garantida a prioridade àquele que primeiro apresentou a invenção ao INPI, sendo possível buscar parceiros e possíveis licenciantes para a tecnologia e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão ser pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária. Entretanto, no ato do depósito é garantida a prioridade àquele que primeiro apresentou a invenção ao INPI, sendo possível buscar parceiros e possíveis licenciantes para a tecnologia." 
+
+    utter_perguntar_patente_depósito_de_pedido_internacionalizacao:
+    - text: "A internacionalização de um pedido de patente é uma decisão estratégica de negócio. Para aumentar a chance de sucesso de transferência de uma patente destinada para mercados globais ou para empresas que operam em outros países a internacionalização é fundamental. O depósito via PCT (Tratado em Matéria de Patentes) é uma alternativa de internacionalização temporária que proporciona maior tempo para a definição dos países nos quais se deseja nacionalizar. O prazo máximo para internacionalizar via PCT é de 12 meses contados a partir da data de depósito do pedido de patente no Brasil." 
+
+    utter_perguntar_inovacao:
+    - text: "Inovação remete à introdução de novidade ou aperfeiçoamento no ambiente produtivo ou social que resulte em novos produtos, processos ou serviços." 
+
+    utter_cumprimentar_chegada:
+    - text: "Olá! Em que posso ajudar sobre o assunto de patentes?" 
+
+    utter_cumprimentar_despedida:
+    - text: "Espero ter ajudado!" 
+
+    utter_cumprimentar_agradecimento:
+    - text: "Até logo!" 
+
+    utter_perguntar_bot:
+    - text: "Eu sou o chatbot PatentIA, posso responder algumas perguntas sobre patentes." 
+

@@ -4,57 +4,251 @@ rules:
 
 - rule: rule 1
   steps:
-  - intent: patente
-  - action: utter_patente
+  - intent: perguntar_patente
+  - action: utter_perguntar_patente
 
 - rule: rule 2
   steps:
-  - intent: periodo_de_graca
-  - action: utter_periodo_de_graca
+  - intent: perguntar_periodo_de_graca_protecaoo_de_invencao
+  - action: utter_perguntar_periodo_de_graca_protecaoo_de_invencao
 
 - rule: rule 3
   steps:
-  - intent: como_proteger_invencao
-  - action: utter_como_proteger_invencao
+  - intent: perguntar_como_proteger_invencao
+  - action: utter_perguntar_como_proteger_invencao
+
+- rule: rule 4
+  steps:
+  - intent: perguntar_patente_expectativa_direito
+  - action: utter_perguntar_patente_expectativa_direito
+
+- rule: rule 5
+  steps:
+  - intent: perguntar_INPI
+  - action: utter_perguntar_INPI
+
+- rule: rule 6
+  steps:
+  - intent: perguntar_patente_deposito_de_pedido_busca_previa
+  - action: utter_perguntar_patente_deposito_de_pedido_busca_previa
+
+- rule: rule 7
+  steps:
+  - intent: perguntar_patente_territorialidade
+  - action: utter_perguntar_patente_territorialidade
+
+- rule: rule 8
+  steps:
+  - intent: perguntar_patente_verde
+  - action: utter_perguntar_patente_verde
+
+- rule: rule 9
+  steps:
+  - intent: perguntar_patente_exame_prioritario_de_pedido
+  - action: utter_perguntar_patente_exame_prioritario_de_pedido
+
+- rule: rule 10
+  steps:
+  - intent: perguntar_materia_nao_patenteavel
+  - action: utter_perguntar_materia_nao_patenteavel
+
+- rule: rule 11
+  steps:
+  - intent: perguntar_patente_busca_de_deposito_de_pedido_internet
+  - action: utter_perguntar_patente_busca_de_deposito_de_pedido_internet
+
+- rule: rule 12
+  steps:
+  - intent: perguntar_patente_deposito_de_pedido_Internacioal
+  - action: utter_perguntar_patente_deposito_de_pedido_Internacioal
+
+- rule: rule 13
+  steps:
+  - intent: perguntar_patente_deposito_de_pedido_no_brasil
+  - action: utter_perguntar_patente_deposito_de_pedido_no_brasil
+
+- rule: rule 14
+  steps:
+  - intent: perguntar_patente_patenteabilidade_de_software
+  - action: utter_perguntar_patente_patenteabilidade_de_software
+
+- rule: rule 15
+  steps:
+  - intent: perguntar_patente_vigencia
+  - action: utter_perguntar_patente_vigencia
+
+- rule: rule 16
+  steps:
+  - intent: perguntar_patente_elaboracao_de_pedido
+  - action: utter_perguntar_patente_elaboracao_de_pedido
+
+- rule: rule 17
+  steps:
+  - intent: perguntar_patente_deposito_de_pedido_sigilo
+  - action: utter_perguntar_patente_deposito_de_pedido_sigilo
+
+- rule: rule 18
+  steps:
+  - intent: perguntar_patente_documento_para_pedido
+  - action: utter_perguntar_patente_documento_para_pedido
+
+- rule: rule 19
+  steps:
+  - intent: perguntar_patente_modalidade
+  - action: utter_perguntar_patente_modalidade
+
+- rule: rule 20
+  steps:
+  - intent: perguntar_diferenca_descoberta_invencao_inovacao
+  - action: utter_perguntar_diferenca_descoberta_invencao_inovacao
+
+- rule: rule 21
+  steps:
+  - intent: perguntar_patente_expedicao
+  - action: utter_perguntar_patente_expedicao
+
+- rule: rule 22
+  steps:
+  - intent: perguntar_patente_matéria_patenteavel
+  - action: utter_perguntar_patente_matéria_patenteavel
+
+- rule: rule 23
+  steps:
+  - intent: perguntar_patente_de_modelo_de_utilidade
+  - action: utter_perguntar_patente_de_modelo_de_utilidade
+
+- rule: rule 24
+  steps:
+  - intent: perguntar_patente_de_invencao
+  - action: utter_perguntar_patente_de_invencao
+
+- rule: rule 25
+  steps:
+  - intent: perguntar_patente_elegibilidade_de_depositante
+  - action: utter_perguntar_patente_elegibilidade_de_depositante
+
+- rule: rule 26
+  steps:
+  - intent: perguntar_propriedade_industrial
+  - action: utter_perguntar_propriedade_industrial
+
+- rule: rule 27
+  steps:
+  - intent: perguntar_sistema_de_patentes_de_invencao_beneficio
+  - action: utter_perguntar_sistema_de_patentes_de_invencao_beneficio
+
+- rule: rule 28
+  steps:
+  - intent: perguntar_estado_da_tecnica
+  - action: utter_perguntar_estado_da_tecnica
+
+- rule: rule 29
+  steps:
+  - intent: perguntar_patente_modelo_de_deposito_de pedido_acesso
+  - action: utter_perguntar_patente_modelo_de_deposito_de pedido_acesso
+
+- rule: rule 30
+  steps:
+  - intent: perguntar_patente_elegibilidade_de_deposito_de_pedido
+  - action: utter_perguntar_patente_elegibilidade_de_deposito_de_pedido
+
+- rule: rule 31
+  steps:
+  - intent: perguntar_patente_titular_direitos
+  - action: utter_perguntar_patente_titular_direitos
+
+- rule: rule 32
+  steps:
+  - intent: perguntar_invencao_permissao_de_divulgacao
+  - action: utter_perguntar_invencao_permissao_de_divulgacao
+
+- rule: rule 33
+  steps:
+  - intent: perguntar_patente_anuidade_de_pedido
+  - action: utter_perguntar_patente_anuidade_de_pedido
+
+- rule: rule 34
+  steps:
+  - intent: perguntar_transferencia_de_tecnologia
+  - action: utter_perguntar_transferencia_de_tecnologia
+
+- rule: rule 35
+  steps:
+  - intent: perguntar_royalty_propriedade_intelectual
+  - action: utter_perguntar_royalty_propriedade_intelectual
+
+- rule: rule 36
+  steps:
+  - intent: perguntar_propriedade_intelectual
+  - action: utter_perguntar_propriedade_intelectual
+
+- rule: rule 37
+  steps:
+  - intent: perguntar_patente_titularidade_proprietário_legal
+  - action: utter_perguntar_patente_titularidade_proprietário_legal
+
+- rule: rule 38
+  steps:
+  - intent: perguntar_wipo_das
+  - action: utter_perguntar_wipo_das
+
+- rule: rule 39
+  steps:
+  - intent: perguntar_inovacao_tecnologica
+  - action: utter_perguntar_inovacao_tecnologica
+
+- rule: rule 40
+  steps:
+  - intent: perguntar_titularidade_de_patente_transferencia
+  - action: utter_perguntar_titularidade_de_patente_transferencia
+
+- rule: rule 41
+  steps:
+  - intent: perguntar_deposito_pedido_de_ patente_custos
+  - action: utter_perguntar_deposito_pedido_de_ patente_custos
+
+- rule: rule 42
+  steps:
+  - intent: perguntar_deposito_de_pedido_de_patente_acompanhamento
+  - action: utter_perguntar_deposito_de_pedido_de_patente_acompanhamento
 
 - rule: rule 43
   steps:
-  - intent: cumprimento
-  - action: utter_cumprimento
+  - intent: perguntar_patente_prescricao_de_direitos
+  - action: utter_perguntar_patente_prescricao_de_direitos
 
 - rule: rule 44
   steps:
-  - intent: cumprimento_despedida
-  - action: utter_cumprimento_despedida
+  - intent: perguntar_patente_deposito_de_pedido_etapas_de_concessao
+  - action: utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao
 
 - rule: rule 45
   steps:
-    - intent: cumprimento_agradecimento
-    - action: utter_cumprimento_agradecimento
+  - intent: perguntar_patente_depósito_de_pedido_internacionalizacao
+  - action: utter_perguntar_patente_depósito_de_pedido_internacionalizacao
 
 - rule: rule 46
   steps:
-    - intent: pergunta_bot
-    - action: utter_pergunta_bot
+  - intent: perguntar_inovacao
+  - action: utter_perguntar_inovacao
 
 - rule: rule 47
   steps:
-    - intent: greet
-    # - action: utter_greet
-    - action: action_show_name
+  - intent: cumprimentar_chegada
+  - action: utter_cumprimentar_chegada
 
 - rule: rule 48
   steps:
-    - intent: informa_numero
-    - action: utter_informa_numero
+  - intent: cumprimentar_despedida
+  - action: utter_cumprimentar_despedida
 
 - rule: rule 49
   steps:
-    - intent: informa_situacao
-    # - action: utter_greet
-    - action: action_informa_situacao
+  - intent: cumprimentar_agradecimento
+  - action: utter_cumprimentar_agradecimento
 
 - rule: rule 50
   steps:
-    - intent: informa_data
-    - action: utter_informa_data
+  - intent: perguntar_bot
+  - action: utter_perguntar_bot
+

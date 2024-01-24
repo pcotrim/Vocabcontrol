@@ -6,9 +6,3 @@ stories:
   steps:
   - intent: patente
   - action: utter_patente
-
-#- story: greet + nome
-#  steps:
-#  - intent: greet
-#  - action: action_show_name
-
