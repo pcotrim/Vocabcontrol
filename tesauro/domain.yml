@@ -94,7 +94,7 @@ responses:
     - text: "Volte sempre!"
 
     utter_cumprimento_agradecimento:
-    - text: "De nada!"
+    - text: "De nada! "
     - text: "Por nada!"
     - text: "Estou à disposição!"
 
