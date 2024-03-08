@@ -40,6 +40,7 @@ nlu:
     - Posso publicar um resumo relacionado à tecnologia a ser patenteada em um evento (simpósio, congresso, reunião anual, etc.)?
     - Posso divulgar minha invenção antes de protegê-la?
     - Estou vendendo a minha invenção há 3 anos, agora quero proteger como patente, como eu faço?
+    - Me explica sobre período de graça?
 
 - intent: perguntar_como_proteger_invencao
   examples: |
@@ -169,7 +170,7 @@ nlu:
     - Quero saber sobre pedido de patente internacional?
     - Onde fazer uma busca de patentes?
 
-- intent: perguntar_patente_deposito_de_pedido_Internacioal
+- intent: perguntar_patente_deposito_de_pedido_Internacional
   examples: |
     - Posso requerer proteção para o meu invento também em outros países?
     - Como faço o depósito do meu pedido fora do Brasil?
@@ -211,7 +212,7 @@ nlu:
     - Me sobre o critério de patenteabilidade de software?
     - Quero saber sobre patenteabilidade de software?
     - Um programa de computador pode ser patenteado?
-    - Programas de computadores podem ser patenteados?
+    - Programas de computador podem ser patenteados?
     - Posso patentear um programa de computador?
 
 - intent: perguntar_patente_vigencia
@@ -289,23 +290,35 @@ nlu:
     - Qual a natureza da patente?
     - Quais os tipos ou modalidades de patente?
 
-- intent: perguntar_diferenca_descoberta_invencao_inovacao
+- intent: perguntar_invencao
   examples: |
-    - Qual a diferença entre descoberta, invenção, criação e inovação?
-    - Quais são as principais diferenças entre uma descoberta, uma invenção e uma inovação?
-    - Como se distinguem descoberta, invenção e inovação?
-    - De que maneira uma descoberta se diferencia de uma invenção e de uma inovação?
-    - Qual é a distinção entre descoberta, invenção e inovação?
-    - O que diferencia uma descoberta de uma invenção e de uma inovação?
-    - Como posso diferenciar uma descoberta de uma invenção e de uma inovação?
-    - O que torna uma descoberta diferente de uma invenção e de uma inovação?
-    - Em que aspectos uma descoberta, uma invenção e uma inovação são diferentes?
-    - Qual é a diferença chave entre descoberta, uma invenção e uma inovação?
-    - Como uma descoberta difere de uma invenção e de uma inovação?
-    - Qual a diferença de criação, invenção e descoberta?
-    - Qual a diferença de criação industrializável e descoberta?
-    - O que é considerado criação?
-    - Quais os exemplos de criação/inovação?
+    - O que é invenção?
+    - Me explica o que é uma invenção?
+    - Me fala o que é invenção?
+    - Forneça o conceito de invenção?
+    - Defina invenção?
+
+- intent: perguntar_descoberta
+  examples: |
+    - O que é descoberta?
+    - Me explica o que é uma descoberta?
+    - Forneça o conceito de descoberta?
+    - Defina descoberta?
+    - Me fala o que é descoberta?
+    - Quero saber o que é descoberta na inovação?
+    - Uma descoberta é uma invenção?
+    - Uma descoberta pode ser considerada uma invenção?
+    - Uma nova descoberta é uma invenção?
+
+- intent: perguntar_criação
+  examples: |
+    - O que é considerado uma criação?
+    - O que é criação?
+    - Você pode me explicar o que é criação?
+    - Defina criação?
+    - Conceitue criação?
+    - O que se denomina criação?
+    - Quero saber o que é criação?
 
 - intent: perguntar_patente_expedicao
   examples: |
@@ -314,7 +327,8 @@ nlu:
     - Quando pego minha carta-patente?
     - Em que momento eu recebo minha carta-patente?
     - Quando será emitida a minha carta-patente?
-    - Após a aprovação do pedido de patente, quando recebo a carta-patente?
+    - Após a aprovação do pedido de patente?
+    - Quando recebo a carta-patente?
     - Me fala sobre o recebimento de patente?
     - Quero saber sobre o recebimento de carta-patente?
     - Me informa sobre expedição de patente?
@@ -516,7 +530,7 @@ nlu:
     - Quero saber sobre o pagamento de anuidade de patente?
     - Quando começa o pagamento das anuidades?
     - Quais os deveres do titular de uma patente?
-    - Me fale sobre a aunidade de pedido de patente?
+    - Me fale sobre a anuidade de pedido de patente?
 
 - intent: perguntar_transferencia_de_tecnologia
   examples: |
@@ -544,7 +558,7 @@ nlu:
     - Poderia me definir o termo royalties?
     - O que é royalties no que se refere à patente?
     - Como são definidos os royalties?
-    - Você pode me esclarecer sobre o conceito de royalties dentro da propriedade intelectual?
+    - Você pode me esclarecer sobre o conceito de royalties dentro da propriedade industrial?
 
 - intent: perguntar_propriedade_intelectual
   examples: |
@@ -566,19 +580,31 @@ nlu:
     - Você pode me dizer o que é propriedade intelecutal?
     - Você pode me explicar o que é propriedade intelecutal?
 
-- intent: perguntar_patente_titularidade_proprietário_legal
+- intent: perguntar_titular_da patente
   examples: |
-    - Quem é o titular e quem é o autor de uma patente?
-    - Quem é o detentor dos direitos e quem é o inventor de uma patente?
-    - Quem possui a propriedade e quem é o criador de uma patente?
-    - Quem é o proprietário e quem é o responsável pela invenção de uma patente?
-    - Quem é o detentor legal e quem é o originador de uma patente?
-    - Quem tem a titularidade e quem é o gerador da ideia por trás de uma patente?
-    - Quem é o possuidor oficial e quem é o desenvolvedor da inovação patenteada?
+    - Quem é o titular?
+    - Quem é o detentor dos direitos de uma patente?
+    - Quem possui a propriedade de uma patente?
+    - Quem é o proprietário de uma patente?
+    - Quem é o detentor legal?
+    - Quem tem a titularidade de uma patente?
+    - Quem é o possuidor oficial da inovação patenteada?
     - Quero saber sobre titularidade da patente?
     - Me fala sobre titular da patente?
     - Quem é o proprietário legal da patente?
+    - Quem é o titular da patente?
+
+- intent: perguntar_patente_autor
+  examples: |
+    - Quem é o autor de uma patente?
+    - Quem é o inventor de uma patente?
+    - Quem é o criador de uma patente?
+    - Quem é o gerador da ideia por trás de uma patente?
     - Quem é considerado inventor?
+    - A quem pertence a autoria da patente?
+    - Me fala quem é o autor da patente?
+    - Me diz aí quem é o inventor da patente?
+    - A quem pertence a autoria de uma patente?
 
 - intent: perguntar_wipo_das
   examples: |
@@ -613,10 +639,10 @@ nlu:
 - intent: perguntar_deposito_pedido_de_ patente_custos
   examples: |
     - Quais os custos básicos de uma Patente?
-    - Quais custos com uma patente?
+    - Quais são os custos com uma patente?
     - Quais gastos para depositar uma patente?
     - Quais custos para depositar uma patente?
-    - Gastos para depositas patente?
+    - Gastos para depositar patente?
     - Custos com patente?
     - Quais são as taxas associadas ao pedido de patente?
     - Quais são os custos iniciais para dar entrada em uma patente?
@@ -657,7 +683,7 @@ nlu:
   examples: |
     - Quando uma patente de invenção é internacionalizada?
     - Em que momento uma patente de invenção é internacionalizada?
-    - Como e quando uma patente de invenção pode ser extendida para Em que momento uma patente de invenção é internacionalizada?
+    - Como e quando uma patente de invenção pode ser extendida para o exterior?
     - Me fala aí a partir de que momento uma patente é internacionalizada?
     - Em que circunstâncias uma patente de invenção pode ser registrada internacionalmente?
     - Como e quando uma patente de invenção pode ser extendida para outros países?
@@ -675,7 +701,10 @@ nlu:
     - O que é entendido como inovação?
     - Me diga o que é inovação?
     - Qual o conceito de inovação?
-    - Qual é o significdo de inovação?
+    - Qual é o significado de inovação?
+    - O que quer dizer inovação?
+    - O que se entende como inovação?
+    - Um produto novo é uma inovação?
 
 - intent: cumprimentar_chegada
   examples: |
@@ -787,6 +816,9 @@ nlu:
 
 - synonym: patenteabilidade de software
   examples: |
+   -  patenteabilidade de programa de computador
+   -  patenteabilidade de invenção implementada por computador
+   -  patenteabilidade de invenção implementada por software
 
 - synonym: validade de patente
   examples: |
@@ -807,10 +839,6 @@ nlu:
   examples: |
    -  natureza da patente
 
-- synonym: criação
-  examples: |
-   -  criação industrializável
-
 - synonym: recebimento de patente
   examples: |
    -  recebimento de carta patente
@@ -818,7 +846,7 @@ nlu:
    -  entrega de carta-patente
    -  entrega de patente
 
-- synonym: patenteabilidade
+- synonym: requisitos de patenteabilidade
   examples: |
 
 - synonym: modelo de utilidade
@@ -857,9 +885,14 @@ nlu:
   examples: |
    -  pagamento de anuidade de pedido de patente
 
-- synonym: titularidade da patente
+- synonym: titular da patente
   examples: |
    -  proprietário legal da patente
+
+- synonym: inventor da patente 
+  examples: |
+   - criador da patente 
+   - autor da patente
 
 - synonym: WIPO DAS
   examples: |
@@ -881,7 +914,7 @@ nlu:
    -  acompnhamento de pedido de patente
    -  acompanhamento de depósito de pedido de patente
 
-- synonym: prescrição de direitos da patente
+- synonym: prescrição dos direitos da patente
   examples: |
    -  fim dos direitos da patente
    -  término dos direitos da patente
