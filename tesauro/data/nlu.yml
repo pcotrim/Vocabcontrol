@@ -20,7 +20,7 @@ nlu:
     - O que se entende por carta-patente?
     - Carta-patente é o que mesmo hein?
 
-- intent: perguntar_periodo_de_graca_protecaoo_de_invencao
+- intent: perguntar_periodo_de_graca_protecao_de_invencao
   examples: |
     - O que é período de graça?
     - O que significa o período de graça?
@@ -582,8 +582,9 @@ nlu:
 
 - intent: perguntar_titular_da patente
   examples: |
-    - Quem é o titular?
+    - Quem é o titular da patente?
     - Quem é o detentor dos direitos de uma patente?
+    - Quem é o dono da patente?
     - Quem possui a propriedade de uma patente?
     - Quem é o proprietário de uma patente?
     - Quem é o detentor legal?
@@ -592,7 +593,8 @@ nlu:
     - Quero saber sobre titularidade da patente?
     - Me fala sobre titular da patente?
     - Quem é o proprietário legal da patente?
-    - Quem é o titular da patente?
+    - Quem é o titular?
+    - A quem pertence a patente?
 
 - intent: perguntar_patente_autor
   examples: |
@@ -888,6 +890,8 @@ nlu:
 - synonym: titular da patente
   examples: |
    -  proprietário legal da patente
+   -  dono da patente
+   -  pertencente da patente
 
 - synonym: inventor da patente 
   examples: |

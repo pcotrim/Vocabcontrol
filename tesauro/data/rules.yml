@@ -9,8 +9,8 @@ rules:
 
 - rule: rule 2
   steps:
-  - intent: perguntar_periodo_de_graca_protecaoo_de_invencao
-  - action: utter_perguntar_periodo_de_graca_protecaoo_de_invencao
+  - intent: perguntar_periodo_de_graca_protecao_de_invencao
+  - action: utter_perguntar_periodo_de_graca_protecao_de_invencao
 
 - rule: rule 3
   steps:
