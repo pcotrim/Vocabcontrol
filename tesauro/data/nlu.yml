@@ -49,7 +49,13 @@ nlu:
     - Como proteger uma criação industrializável?
     - Como proteger um invento?
     - Qual a forma de proteger meu invento?
-    - Me diga como proteger munha invenção?
+    - Me diga como proteger minha invenção?
+    - Queria saber de que jeito protejo minha invenção?
+    - Me diz aí como se faz para resguardar minha invenção?
+    - Me informe como faz para resguardar minha criação industrializável?
+    - Quais as maneiras que se pode proteger uma invenção?
+    - A criação industrializável pode ser protegida de que forma?
+    - Quero proteger minha invenção, me fala o que devo fazer?
 
 - intent: perguntar_patente_expectativa_direito
   examples: |
@@ -77,8 +83,14 @@ nlu:
     - Qual a finalidade do INPI?
     - Como o INPI pode ajudar no meu negócio?
     - Quem concede e protege as patentes no Brasil?
-    - Como o INPI pode me ajudar ou o meu negócio relativo a patentes?
+    - Como o INPI pode me ajudar no meu negócio relativo às patentes?
     - O que faz o Instituto Nacional de Propriedade Industrial?
+    - A que órgão o INPI é vinculado?
+    - O INPI é de qual Ministério?
+    - Quando o INPI foi criado?
+    - Afinal o que é o Instituto Nacional de Propriedade Industrial?
+    - NPI?
+    - Qual atribuição do INPI?
 
 - intent: perguntar_patente_deposito_de_pedido_busca_previa
   examples: |
@@ -89,6 +101,12 @@ nlu:
     - O que é a busca prévia para o registro de patente?
     - O que é a busca prévia de patente?
     - É necessário fazer uma pesquisa para saber se o invento já existe?
+    - Para que serve a busca prévia?
+    - Me explica sobre a busca prévia nos pedidos de patentes?
+    - Me fala sobre busca prévia?
+    - Me explique sobre busca prévia em detalhes?
+    - Me fale sobre busca prévia em patentes?
+    - Quero saber sobre busca prévia em modelo de utilidade?
 
 - intent: perguntar_patente_territorialidade
   examples: |
@@ -119,6 +137,14 @@ nlu:
     - Me fale sobre patentes de tecnologia verde?
     - Me explica sobre patente verde?
     - O que você pode me dizer sobre patente de inovação sustentável?
+    - Existe algum tipo de patente que tem a ver com energia sustentável?
+    - Tem algum tipo de pedido de patente que pode dar mais sustentabilidade ao planeta?
+    - Patente verde tem pedido prioritário?
+    - Patente verde tem exame prioritário?
+    - Qual patente pode ajudar o meio ambiente?
+    - Queria saber mais sobre patentes verdes?
+    - Detalhe sobre patentes sustentáveis?
+    - A patente ecológica é o quê?
 
 - intent: perguntar_patente_exame_prioritario_de_pedido
   examples: |
@@ -132,6 +158,7 @@ nlu:
     - Pessoas Idosas têm prioridade no exame de pedido de patente?
     - Existem forma de agilizar meu pedido de patente?
     - Como ter uma resposta rápida do INPI sobre pedido de patente?
+    - Detalhe sobre exame prioritário?
 
 - intent: perguntar_materia_nao_patenteavel
   examples: |
@@ -147,12 +174,14 @@ nlu:
     - O que não pode ser patenteado?
     - O que não é considerado invenção?
     - Posso proteger uma ideia ou preciso reduzi-la à prática?
-    - O que não é considerado uma patente?
+    - O que não é considerado para ser uma patente?
     - Posso patentear uma planta?
     - Posso patentear uma ideia?
     - O que não é patenteável?
     - O que não se considera patente não pode ser protegido?
     - Ideias são patenteáveis?
+    - Me explique sobre matéria não patenteável?
+    - O que não pode ser matéria patenteável?
 
 - intent: perguntar_patente_busca_de_deposito_de_pedido_internet
   examples: |
@@ -190,14 +219,19 @@ nlu:
   examples: |
     - Como deposito minha patente no Brasil?
     - Como posso depositar um pedido de patente?
-    - como registro minha patente no Brasil?
+    - Como registro minha patente no Brasil?
     - como registro minha criação no Brasil?
-    - como registro meu invento no Brasil?
+    - Como registro meu invento no Brasil?
     - Me fale sobre depósito de pedido de patente no Brasil?
     - Quero saber sobre pedido de patente no Brasil?
     - Onde depositar um pedido?
     - Como obtenho uma patente?
     - Onde e como apresentar a documentação?
+    - Estou com dúvidas sobre como faço para fazer meu depósito de patente?
+    - Me fala em detalhes como faço para depositar minha patente no Brasil?
+    - Formas de fazer pedido de patente?
+    - Maneiras de fazer pedido de patente?
+    - Jeitos de fazer pedido de patente?
 
 - intent: perguntar_patente_patenteabilidade_de_software
   examples: |
@@ -241,7 +275,8 @@ nlu:
     - Posso escrever meu próprio pedido de patente ou devo buscar um escritório especializado?
     - Como elaborar os documentos que integram um pedido de patente?
     - Quais são os documentos necessários para o depósito do pedido de patente?
-    - Quem poderedigir o pedido de patente?
+    - Quem pode redigir o pedido de patente?
+    - Como faço para patentear meu invento?
 
 - intent: perguntar_patente_deposito_de_pedido_sigilo
   examples: |
@@ -297,6 +332,13 @@ nlu:
     - Me fala o que é invenção?
     - Forneça o conceito de invenção?
     - Defina invenção?
+    - Detalhe invenção?
+    - Quais são as características de uma invenção?
+    - Queria saber o que é uma invenção?
+    - Me fala tudo que sabe sobre invenção?
+    - O que é mesmo invenção, hein?
+    - Mas o que é invenção afinal de contas?
+    - Invenções resolvem problemas, me explique?
 
 - intent: perguntar_descoberta
   examples: |
@@ -309,6 +351,8 @@ nlu:
     - Uma descoberta é uma invenção?
     - Uma descoberta pode ser considerada uma invenção?
     - Uma nova descoberta é uma invenção?
+    - Quais as características de uma descoberta?
+    - Não entendi bem o que seria uma descoberta, me explique?
 
 - intent: perguntar_criação
   examples: |
@@ -319,6 +363,10 @@ nlu:
     - Conceitue criação?
     - O que se denomina criação?
     - Quero saber o que é criação?
+    - Quais as características de uma criação?
+    - Me explica o que seria uma criação?
+    - Me detalhe sobre criação?
+    - O que se entende sobre o conceito de criação?
 
 - intent: perguntar_patente_expedicao
   examples: |
@@ -359,6 +407,8 @@ nlu:
     - O que pode ser patenteado?
     - Inventei um produto ou processo, agora, o que devo fazer, é possível proteger?
     - Quais são os requisitos de patenteabilidade de uma invenção?
+    - O que é matéria patenteável?
+    - Me explica sobre matéria patenteável?
 
 - intent: perguntar_patente_de_modelo_de_utilidade
   examples: |
@@ -371,6 +421,8 @@ nlu:
     - Quais são as diferenças entre uma patente de invenção e uma patente de Modelo de Utilidade?
     - Qual a diferença de modelo de utilidade e patente de invenção?
     - Qual a diferença entre patente de invenção e de modelo de utilidade?
+    - Não entendi o que é um modelo de utilidade?
+    - Detalhe modelo de utilidade pra mim?
 
 - intent: perguntar_patente_de_invencao
   examples: |
@@ -381,6 +433,10 @@ nlu:
     - O que compreende uma patente de invenção?
     - Qual é a definição de uma patente de invenção?
     - O que se entende por patente de invenção?
+    - Quais as características da patente de invenção?
+    - Não entendi o que é patente de invenção?
+    - Conceitue patente de invenção?
+    - Não sei o que é patente de invenção, me explique?
 
 - intent: perguntar_patente_elegibilidade_de_depositante
   examples: |
@@ -559,6 +615,10 @@ nlu:
     - O que é royalties no que se refere à patente?
     - Como são definidos os royalties?
     - Você pode me esclarecer sobre o conceito de royalties dentro da propriedade industrial?
+    - Quais são as características dos royalties?
+    - Me fala tudo que sabe sobre royalties?
+    - Não sei nada sobre royalties em patentes, me explique?
+    - Detalhe o que sabe sobre royalties?
 
 - intent: perguntar_propriedade_intelectual
   examples: |
@@ -606,7 +666,10 @@ nlu:
     - A quem pertence a autoria da patente?
     - Me fala quem é o autor da patente?
     - Me diz aí quem é o inventor da patente?
-    - A quem pertence a autoria de uma patente?
+    - Detalhe a quem pertence a autoria de uma patente?
+    - Para o INPI, quem é o autor da patente?
+    - Pessoa física é o autor da patente?
+    - Pessoa física é o inventor da patente?
 
 - intent: perguntar_wipo_das
   examples: |
@@ -626,6 +689,12 @@ nlu:
     - Poderia me explicar o que é inovação tecnológica?
     - Qual é o significado de inovação tecnológica?
     - O que compreende o termo inovação tecnológica?
+    - Quais são as características da inovação tecnológica?
+    - Me detalhe sobre inovação tecnológica?
+    - Quero saber tudo sobre inovação tecnológica?
+    - Discorra sobre inovação tecnológica?
+    - Não sei nada sobre inovação tecnológica, me explique o que sabe?
+    - Não entendi o que é inovação tecnológica?
 
 - intent: perguntar_titularidade_de_patente_transferencia
   examples: |
@@ -637,6 +706,13 @@ nlu:
     - Como posso proceder para passar a propriedade da minha patente para outra pessoa ou empresa?
     - Me fala sobre transferência de patente?
     - Quero saber sobre transferência de titularidade de patente?
+    - Posso vender minha patente?
+    - Posso ceder minha patente?
+    - Eu tenho direito de transferir minha patente?
+    - Me explique sobre trasferência de patente?
+    - Eu consigo tranferir minha patente?
+    - É possível transferir patente?
+    - Tem como transferir meu ativo patente?
 
 - intent: perguntar_deposito_pedido_de_ patente_custos
   examples: |
@@ -648,6 +724,13 @@ nlu:
     - Custos com patente?
     - Quais são as taxas associadas ao pedido de patente?
     - Quais são os custos iniciais para dar entrada em uma patente?
+    - Existe alguma tabela sobre os custos de uma patente?
+    - Me explica sobre os custos com meu pedido de patente?
+    - Quero saber sobre os gastos com minha patente?
+    - Detalha pra mim os gastos com minha patente?
+    - Quanto vai me custar ter uma patente?
+    - Quanto vou ter que desembolsar para ter uma patente?
+    - Quanto em média vou gastar para ter uma patente?
 
 - intent: perguntar_deposito_de_pedido_de_patente_acompanhamento
   examples: |
@@ -656,6 +739,11 @@ nlu:
     - Existe algum serviço online para rastrear o progresso do meu pedido de patente?
     - Quais são os passos para acompanhar o andamento de uma patente no INPI?
     - Como são comunicadas as etapas concluídas no processo de patenteamento?
+    - Como consulto o andamento de uma patente?
+    - Me explica como vejo o andamento de uma patente?
+    - Como faço para saber como está o andamento do meu pedido de patente?
+    - Como acompanho meu pedido de patente?
+    - Quero acompanhar meu pedido, como faço?
 
 - intent: perguntar_patente_prescricao_de_direitos
   examples: |
@@ -668,6 +756,7 @@ nlu:
     - Após a expiração da patente, ainda posso tomar ações legais contra aqueles que usam a invenção?
     - Existem circunstâncias em que posso continuar a controlar o uso de minha invenção mesmo depois que a patente expira?
     - Como proprietário de uma patente que já venceu, ainda tenho alguma proteção legal contra o uso não autorizado da invenção?
+    - Passado o prazo da vigência da patente posso barrar que usem minha invenção?
 
 - intent: perguntar_patente_deposito_de_pedido_etapas_de_concessao
   examples: |
@@ -680,6 +769,9 @@ nlu:
     - Me diga como é o trâmite até a aprovação de uma patente?
     - Me informe como é o trâmite até a aprovação de um pedido de patente?
     - Fala aí como é o trâmite até a aprovação de um pedido de patente?
+    - O que acontece até a concessão da patente?
+    - O que acontece até a concessão do meu pedido de patente?
+    - Me explica aí o passo a passo após o depósito da patente, até eu ter minha patente concedida?
 
 - intent: perguntar_patente_depósito_de_pedido_internacionalizacao
   examples: |
@@ -755,6 +847,34 @@ nlu:
     - Quem é você?
     - Você um bot?
     - Com quem eu falo?
+    - Pra que você serve?
+
+- intent: perguntar_criador_bot
+  examples: |
+    - Quem te criou?
+    - Quem foi responsável por sua criação?
+    - Você foi criado por uma empresa?
+    - Qual o nome da pessoa que te criou?
+    - Qual empresa te criou?
+    - Me dê detalhes da sua criação?
+    - Quero saber tudo sobre seu inventor?
+    - Me explica porque você foi criado?
+    - Quando você foi criado?
+    - Me diga tudo sobre o inventor do PatentIA?
+    - Quem cirou o chatbot PatentIA?
+
+- intent: perguntar_dados_bot
+  examples: |
+    - Como acessar os dados do PatentIA?
+    - Como tenho acesso a todos os seus dados?
+    - Como acesso sua base de conhecimento?
+    - Seus dados são de livre acesso?
+    - Como consigo acesso a pesquisa de doutorado da criadora do bot?
+    - Como faço para ter todos os detalhes da construção do bot?
+    - Como faço um bot igual a esse?
+    - Me forneça informações sobre como acessar os dados de construção do bot?
+    - Quero informações sobre como esse chatbot foi criado?
+    - Me dê informações sobre o PatentIA?
 
 - synonym: carta-patente
   examples: |
@@ -895,8 +1015,7 @@ nlu:
 
 - synonym: inventor da patente 
   examples: |
-   - criador da patente 
-   - autor da patente
+   - criador da patente
 
 - synonym: WIPO DAS
   examples: |
@@ -915,7 +1034,7 @@ nlu:
 - synonym: status de pedido de patente
   examples: |
    -  status de depósito de pedido de patente
-   -  acompnhamento de pedido de patente
+   -  acompanhamento de pedido de patente
    -  acompanhamento de depósito de pedido de patente
 
 - synonym: prescrição dos direitos da patente

@@ -267,3 +267,13 @@ rules:
   - intent: perguntar_bot
   - action: utter_perguntar_bot
 
+- rule: rule 54
+  steps:
+  - intent: perguntar_criador_bot
+  - action: utter_perguntar_criador_bot
+
+- rule: rule 55
+  steps:
+  - intent: perguntar_dados_bot
+  - action: utter_perguntar_dados_bot
+
