@@ -1,1 +1,1 @@
-
+Arquivos necessários para um Chatbot construído no Rasa rodar no Google Cloud. Para mais informações ver Tese de Doutoramento de Paula Cotrim de Abrantes "Inter-relação da Ciência da Informação com a Inteligência Artificial em Sistemas de Organização do Conhecimento: análise empírica em protótipo de chatbot e análise patentométrica no período de 2000 a 2022."
