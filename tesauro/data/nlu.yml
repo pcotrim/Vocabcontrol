@@ -16,11 +16,12 @@ nlu:
     - Qual é o conceito de uma patente?
     - O que representa a palavra patente no contexto da propriedade intelectual?
     - O que implica ter uma patente?
-    - Eu preciso saber o que é uma carta-partente?
+    - Eu preciso saber o que é uma carta-patente?
     - O que se entende por carta-patente?
     - Carta-patente é o que mesmo hein?
+    - Queria saber mais sobre patente?
 
-- intent: perguntar_periodo_de_graca_protecao_de_invencao
+- intent: perguntar_periodo_de_graca
   examples: |
     - O que é período de graça?
     - O que significa o período de graça?
@@ -33,6 +34,7 @@ nlu:
     - Posso mostrar a minha invenção para investidores, antes de protegê-la?
     - Como faço se pretendo publicar um artigo científico ou divulgar meus resultados e ainda não protegi minha tecnologia?
     - Posso apresentar a minha invenção em congressos, seminários, eventos, defesas de monografia, dissertação ou tese, antes de protegê-la?
+    - É possível divulgar um invento em feiras, seminários e congresso antes de depositá-lo?
     - Posso divulgar minha criação?
     - Posso divulgar minha criação num artigo?
     - Posso falar da minha criação com os investidores sem protegê-la primeiro?
@@ -41,6 +43,7 @@ nlu:
     - Posso divulgar minha invenção antes de protegê-la?
     - Estou vendendo a minha invenção há 3 anos, agora quero proteger como patente, como eu faço?
     - Me explica sobre período de graça?
+    - Posso patentear uma invenção que já mostrei publicamente?
 
 - intent: perguntar_como_proteger_invencao
   examples: |
@@ -56,6 +59,9 @@ nlu:
     - Quais as maneiras que se pode proteger uma invenção?
     - A criação industrializável pode ser protegida de que forma?
     - Quero proteger minha invenção, me fala o que devo fazer?
+    - Se eu não tiver uma patente, como posso proteger minha invenção?
+    - Inventei um produto ou processo, e agora, o que devo fazer, é possível proteger?
+    - Como proteger meu invento?
 
 - intent: perguntar_patente_expectativa_direito
   examples: |
@@ -74,6 +80,9 @@ nlu:
     - Depois de depositar a patente no INPI, o requerente já pode usufruir dos direitos de patente?
     - Quem tem expectativa de direito de patente já pode usufruí-la?
     - O depósito do pedido de patente garante esse direito automaticamente?
+    - Eu já tenho direito em potencial da patente?
+    - Com o depósito eu já tenho potencial de proteção patentária?
+    - Já há perspectiva de direito da patente?
 
 - intent: perguntar_INPI
   examples: |
@@ -89,7 +98,6 @@ nlu:
     - O INPI é de qual Ministério?
     - Quando o INPI foi criado?
     - Afinal o que é o Instituto Nacional de Propriedade Industrial?
-    - NPI?
     - Qual atribuição do INPI?
 
 - intent: perguntar_patente_deposito_de_pedido_busca_previa
@@ -102,11 +110,16 @@ nlu:
     - O que é a busca prévia de patente?
     - É necessário fazer uma pesquisa para saber se o invento já existe?
     - Para que serve a busca prévia?
-    - Me explica sobre a busca prévia nos pedidos de patentes?
+    - Me explica sobre a busca prévia nos pedidos de patente?
     - Me fala sobre busca prévia?
     - Me explique sobre busca prévia em detalhes?
     - Me fale sobre busca prévia em patentes?
     - Quero saber sobre busca prévia em modelo de utilidade?
+    - Você pode me explicar sobre busca prévia de patente modelo de utilidade?
+    - Fala o que sabe sobre busca prévia em modelo de utilidade?
+    - Quero saber tudo sobre busca prévia de modelo de utilidade?
+    - Tenho dúvidas sobre busca prévia em depósito de pedido de modelo de utilidade?
+    - Com a busca prévia posso saber se estou infringindo alguma patente?
 
 - intent: perguntar_patente_territorialidade
   examples: |
@@ -182,6 +195,8 @@ nlu:
     - Ideias são patenteáveis?
     - Me explique sobre matéria não patenteável?
     - O que não pode ser matéria patenteável?
+    - Posso patentear um método de ensino que desenvolvi?
+    - Posso patentear uma fórmula ou receita?
 
 - intent: perguntar_patente_busca_de_deposito_de_pedido_internet
   examples: |
@@ -196,8 +211,11 @@ nlu:
     - Onde procurar patentes?
     - Como uma patente na internet?
     - Como faço pesquisa de patente na internet?
-    - Quero saber sobre pedido de patente internacional?
+    - Quero saber sobre busca de pedido de patente internacional?
     - Onde fazer uma busca de patentes?
+    - Como busco patentes de outros países?
+    - Como consulto patentes existentes?
+    - Como posso saber se estou infringindo alguma patente?
 
 - intent: perguntar_patente_deposito_de_pedido_Internacional
   examples: |
@@ -205,7 +223,7 @@ nlu:
     - Como faço o depósito do meu pedido fora do Brasil?
     - Como posso obter proteção de patente internacional para minha invenção?
     - É possível solicitar uma patente em vários países simultaneamente?
-    - O que é PCT?
+    - Consigo proteger meu invento no exterior (PCT)?
     - Como proteger uma invenção no exterior?
     - Para o documento ter validade fora do Brasil o que é preciso fazer?
     - Caso haja interesse em proteger a tecnologia em outros países, é necessário realizar o depósito do pedido de patente nesses países?
@@ -213,14 +231,25 @@ nlu:
     - Me dê instruções sobre depósito de pedido de patente internacional?
     - Me fala sobre proteção de patente no exterior?
     - Como proteger uma invenção no exterior (PCT)?
-    - Como solicitar proteção de uma invenção em outros países?
+    - Solicitar proteção de uma invenção em outros países?
+    - Existe algum tipo de patente internacional que cubra todos os países?
+    - Posso fazer um pedido internacional de patente?
+    - Quais são os requisitos para internacionalizar uma patente de invenção?
+    - Qual é o processo para tornar uma patente de invenção válida em vários países?
+    - Como internacionalizar um pedido de patente?
+    - Me explica o que tenho que fazer para internacionalizar um pedido de patente?
+    - Meu invento pode ser protegido no exterior?
+    - Como patenteio na China?
+    - Como deposito patente nos Estados Unidos (EUA)?
+    - Como faço um pedido de patente na Europa?
+    - Como protege meu invento em países da América Latina?
 
 - intent: perguntar_patente_deposito_de_pedido_no_brasil
   examples: |
     - Como deposito minha patente no Brasil?
     - Como posso depositar um pedido de patente?
     - Como registro minha patente no Brasil?
-    - como registro minha criação no Brasil?
+    - Como registro minha criação no Brasil?
     - Como registro meu invento no Brasil?
     - Me fale sobre depósito de pedido de patente no Brasil?
     - Quero saber sobre pedido de patente no Brasil?
@@ -231,18 +260,18 @@ nlu:
     - Me fala em detalhes como faço para depositar minha patente no Brasil?
     - Formas de fazer pedido de patente?
     - Maneiras de fazer pedido de patente?
-    - Jeitos de fazer pedido de patente?
+    - Me explica com faço um pedido de patente?
 
 - intent: perguntar_patente_patenteabilidade_de_software
   examples: |
-    - Patente de Invenção Implementada por Computador é diferente de um Programa de Computador?
-    - Qual é a diferença entre uma Patente de Invenção Implementada por Computador e um Programa de Computador?
-    - Como uma Patente de Invenção Implementada por Computador difere de um Programa de Computador?
-    - Um Programa de Computador pode ser considerado uma Patente de Invenção Implementada por Computador?
-    - Existem critérios diferentes para patentear uma Invenção Implementada por Computador em comparação com um Programa de Computador?
-    - Quais são os requisitos para patentear uma Invenção Implementada por Computador versus um Programa de Computador?
-    - O que torna uma Patente de Invenção Implementada por Computador única em comparação com um Programa de Computador?
-    - Um Programa de Computador é elegível para uma Patente de Invenção Implementada por Computador?
+    - Patente de invenção implementada por computador é diferente de um programa de computador?
+    - Qual é a diferença entre uma patente de invenção implementada por computador e um programa de computador?
+    - Como uma patente de invenção implementada por computador difere de um programa de computador?
+    - Um programa de computador pode ser considerado uma patente de invenção implementada por computador?
+    - Existem critérios diferentes para patentear uma invenção implementada por computador em comparação com um programa de computador?
+    - Quais são os requisitos para patentear uma invenção implementada por computador versus um programa de computador?
+    - O que torna uma patente de invenção implementada por computador única em comparação com um programa de computador?
+    - Um programa de computador é elegível para uma patente de invenção implementada por computador?
     - Me sobre o critério de patenteabilidade de software?
     - Quero saber sobre patenteabilidade de software?
     - Um programa de computador pode ser patenteado?
@@ -263,6 +292,11 @@ nlu:
     - Qual a vigência de uma patente no Brasil?
     - Qual a duração da patente?
     - Qual o tempo de validade de uma patente?
+    - Por quanto tempo vale a concessão da patente?
+    - Qual o período de vigência de uma patente de invenção?
+    - Posso renovar uma patente indefinidamente?
+    - Patentes ficam protegidas por lei por quanto tempo?
+    - Meus direitos com relação às patentes só valem 20 anos?
 
 - intent: perguntar_patente_elaboracao_de_pedido
   examples: |
@@ -270,18 +304,21 @@ nlu:
     - Qual o processo de elaboração de um registro de patente?
     - Quais são os passos para elaborar e registrar uma patente?
     - Qual o processo de elaboração de um pedido de patente?
-    - Quero sober sobre elaboração de pedido de patente?
+    - Quero saber sobre elaboração de pedido de patente?
     - Me fala sobre elaboração de registro de patente?
     - Posso escrever meu próprio pedido de patente ou devo buscar um escritório especializado?
     - Como elaborar os documentos que integram um pedido de patente?
     - Quais são os documentos necessários para o depósito do pedido de patente?
     - Quem pode redigir o pedido de patente?
     - Como faço para patentear meu invento?
+    - Como redijo uma patente?
+    - Qual é a estrutura recomendada para uma redação de patente?
+    - Como deve ser uma redação de um pedido de patente?
 
 - intent: perguntar_patente_deposito_de_pedido_sigilo
   examples: |
     - Existe o risco de que algum funcionário do INPI revele a terceiros a invenção ou modelo de um pedido em trâmite?
-    - Existe o risco de que algum servidor do INPI vaze a terceiros a invenção ou modelo de um pedido em trâmite?
+    - Existe o risco de que algum servidor do INPI vaze a terceiros a invenção ou modelo de um pedido que ainda está sendo analisado?
     - Há possibilidade de um servidor do INPI vazar informações sobre uma invenção ou modelo de um pedido ainda em processo?
     - Qual é a probabilidade de que as informações do meu pedido de patente sejam divulgadas por um servidor do INPI?
     - O sigilo da minha invenção ou modelo de utilidade é garantido durante o trâmite no INPI?
@@ -289,7 +326,7 @@ nlu:
     - Quero saber sobre o sigilo de servidor sobre patente?
     - Me fala sobre o sigilo de funcionário sobre patente?
 
-- intent: perguntar_patente_documento_para_pedido
+- intent: perguntar_patente_documentos_para_pedido
   examples: |
     - Que documentos devo apresentar para fazer um depósito de pedido de patente?
     - Quais são os documentos necessários para solicitar uma patente?
@@ -303,7 +340,7 @@ nlu:
     - Quais documentos são necessários para o depósito de uma patente?
     - Quais são os documentos exigidos para a solicitação de uma patente?
     - Para patentear um produto preciso apresentar o protótipo?
-    - Quais os documentos para pedido de patente?
+    - Quais os documentos para registro de patente?
     - Qual a documentação para pedido de patente?
     - Que documentos devo apresentar?
 
@@ -375,8 +412,7 @@ nlu:
     - Quando pego minha carta-patente?
     - Em que momento eu recebo minha carta-patente?
     - Quando será emitida a minha carta-patente?
-    - Após a aprovação do pedido de patente?
-    - Quando recebo a carta-patente?
+    - Após a aprovação do pedido de patente, quando recebo a carta-patente?
     - Me fala sobre o recebimento de patente?
     - Quero saber sobre o recebimento de carta-patente?
     - Me informa sobre expedição de patente?
@@ -419,8 +455,6 @@ nlu:
     - Em que situações se aplica uma patente de Modelo de Utilidade?
     - Para que serve um modelo de utilidade?
     - Quais são as diferenças entre uma patente de invenção e uma patente de Modelo de Utilidade?
-    - Qual a diferença de modelo de utilidade e patente de invenção?
-    - Qual a diferença entre patente de invenção e de modelo de utilidade?
     - Não entendi o que é um modelo de utilidade?
     - Detalhe modelo de utilidade pra mim?
 
@@ -471,7 +505,7 @@ nlu:
     - O que envolve o conceito de propriedade industrial?
     - Quais são os componentes da propriedade industrial?
 
-- intent: perguntar_sistema_de_patentes_de_invencao_beneficio
+- intent: perguntar_sistema_de_patentes_beneficio
   examples: |
     - Quais são os benefícios para a sociedade do sistema de patentes?
     - Como a sociedade se beneficia do sistema de patentes?
@@ -484,7 +518,7 @@ nlu:
     - Quais são os impactos positivos do sistema de patentes na sociedade?
     - Como o sistema de patentes ajuda a sociedade?
     - Qual é o valor do sistema de patentes para a sociedade?
-    - Qual o benefício do sistema de de patentes?
+    - Qual o benefício do sistema de patentes?
     - Qual a vantagem do sistema de patentes?
 
 - intent: perguntar_estado_da_tecnica
@@ -511,15 +545,17 @@ nlu:
     - Pode me indicar um modelo do texto para depósito de patente?
     - Me fala aonde acho um modelo do texto para depósito de patente?
     - Como obtenho um modelo para depositar minha patente?
-    - Como consigo um modelo de patente?
-    - Como obtenho um modelo de pedido de patente?
-    - Como acho um modelo de registro de patente?
-    - Me fala sobre modelo de registro de pedido de patente?
-    - Onde consigo um modelo de depósito de pedido de patente?
+    - Como obtenho um modelo para pedido de patente?
+    - Como acho um modelo para registro de patente?
+    - Me fala sobre modelo para registro de pedido de patente?
+    - Onde consigo um modelo para depósito de pedido de patente?
+    - Preciso de um exemplo de texto para fazer meu pedido de depósito?
+    - Onde consigo uma matriz de texto para escrever meu pedido?
+    - Você tem informação sobre uma referência de texto para fazer meu pedido?
 
 - intent: perguntar_patente_elegibilidade_de_deposito_de_pedido
   examples: |
-    - Quando Patentear um Invento?
+    - Quando patentear um invento?
     - Em que momento é apropriado patentear uma invenção?
     - Qual é o melhor momento para solicitar uma patente para uma invenção?
     - Quando devo considerar o patenteamento de um invento?
@@ -555,19 +591,6 @@ nlu:
     - Quais são os privilégios do titular da patente?
     - Qual é a proteção alcançada por uma patente depositada no INPI?
 
-- intent: perguntar_invencao_permissao_de_divulgacao
-  examples: |
-    - Posso divulgar minha invenção depois de protegê-la?
-    - Após a proteção, posso tornar minha invenção pública?
-    - Uma vez que minha invenção esteja protegida, posso divulgá-la?
-    - Posso compartilhar minha invenção com outros depois de tê-la protegido?
-    - Depois de proteger minha invenção, posso revelá-la ao público?
-    - permissão de divulgação de invenção?
-    - Quando há permissão de divulgação de invento?
-    - Quando há permissão de divulgação de criação industrializável?
-    - Em que período ocorre a permissão de divulgação de criação?
-    - É possível divulgar um invento em feiras, seminários e congresso antes de depositá-lo?
-
 - intent: perguntar_patente_anuidade_de_pedido
   examples: |
     - Quando começa o pagamento das anuidades do pedido de patente?
@@ -587,6 +610,8 @@ nlu:
     - Quando começa o pagamento das anuidades?
     - Quais os deveres do titular de uma patente?
     - Me fale sobre a anuidade de pedido de patente?
+    - Se eu tiver uma patente, preciso pagá-la todo ano para mantê-la?
+    - Como é a questão das taxas?
 
 - intent: perguntar_transferencia_de_tecnologia
   examples: |
@@ -601,10 +626,9 @@ nlu:
     - Pode me explicar o que é transferência de tecnologia?
     - O que envolve o conceito de transferência de tecnologia?
     - Como funciona a transferência de tecnologia?
-    - O que é abrangido pelo conceito de transferência de tecnologia?
+    - O que é abrangido pelo contrato de transferência de tecnologia?
     - Como é caracterizada a transferência de tecnologia?
     - Como pode ocorrer a transferência de tecnologia?
-    - O que é a transferência de propriedade intelectual ou de tecnologia?
 
 - intent: perguntar_royalty_propriedade_intelectual
   examples: |
@@ -620,7 +644,7 @@ nlu:
     - Não sei nada sobre royalties em patentes, me explique?
     - Detalhe o que sabe sobre royalties?
 
-- intent: perguntar_propriedade_intelectual
+- intent: PROPRIEDADE INTELECTUAL
   examples: |
     - A propriedade intelectual diz respeito somente às patentes?
     - O que abrange a propriedade intelectual?
@@ -635,10 +659,10 @@ nlu:
     - A propriedade intelectual só tem a ver com patentes?
     - Patentes são a única consideração em termos de propriedade intelectual?
     - O que é propriedade intelectual?
-    - O que é considerado propriedade intelecutal?
-    - O que se entende como propriedade intelecutal?
-    - Você pode me dizer o que é propriedade intelecutal?
-    - Você pode me explicar o que é propriedade intelecutal?
+    - O que é considerado propriedade intelectual?
+    - O que se entende como propriedade intelectual?
+    - Você pode me dizer o que é propriedade intelectual?
+    - Você pode me explicar o que é propriedade intelectual?
 
 - intent: perguntar_titular_da patente
   examples: |
@@ -696,7 +720,7 @@ nlu:
     - Não sei nada sobre inovação tecnológica, me explique o que sabe?
     - Não entendi o que é inovação tecnológica?
 
-- intent: perguntar_titularidade_de_patente_transferencia
+- intent: perguntar_titularidade_da_patente_transferencia
   examples: |
     - Como transferir minha patente para outra pessoa ou empresa?
     - Como faço para transferir minha patente para outra pessoa ou empresa?
@@ -709,10 +733,12 @@ nlu:
     - Posso vender minha patente?
     - Posso ceder minha patente?
     - Eu tenho direito de transferir minha patente?
-    - Me explique sobre trasferência de patente?
-    - Eu consigo tranferir minha patente?
+    - Me explique sobre transferência de patente?
+    - Eu consigo transferir minha patente?
     - É possível transferir patente?
     - Tem como transferir meu ativo patente?
+    - Quero mudar a titularidade da minha patente?
+    - Me fala sobre mudança de titularidade?
 
 - intent: perguntar_deposito_pedido_de_ patente_custos
   examples: |
@@ -744,6 +770,7 @@ nlu:
     - Como faço para saber como está o andamento do meu pedido de patente?
     - Como acompanho meu pedido de patente?
     - Quero acompanhar meu pedido, como faço?
+    - Qual a situação do meu pedido de patente?
 
 - intent: perguntar_patente_prescricao_de_direitos
   examples: |
@@ -757,6 +784,8 @@ nlu:
     - Existem circunstâncias em que posso continuar a controlar o uso de minha invenção mesmo depois que a patente expira?
     - Como proprietário de uma patente que já venceu, ainda tenho alguma proteção legal contra o uso não autorizado da invenção?
     - Passado o prazo da vigência da patente posso barrar que usem minha invenção?
+    - Posso impedir que as pessoas usem minha invenção depois que o tempo da patente acabar?
+    - Patentes antigas podem ser usadas sem permissão?
 
 - intent: perguntar_patente_deposito_de_pedido_etapas_de_concessao
   examples: |
@@ -777,15 +806,12 @@ nlu:
   examples: |
     - Quando uma patente de invenção é internacionalizada?
     - Em que momento uma patente de invenção é internacionalizada?
-    - Como e quando uma patente de invenção pode ser extendida para o exterior?
-    - Me fala aí a partir de que momento uma patente é internacionalizada?
-    - Em que circunstâncias uma patente de invenção pode ser registrada internacionalmente?
-    - Como e quando uma patente de invenção pode ser extendida para outros países?
-    - Quais são os requisitos para internacionalizar uma patente de invenção?
-    - Qual é o processo para tornar uma patente de invenção válida em vários países?
-    - Quando posso considerar a internacionalização da minha patente de invenção e quais são os passos a seguir?
-    - Como internacionalizar um pedido de patente?
-    - Me explica o que tenho que fazer para internacionalizar um pedido de patente?
+    - Como e quando uma patente de invenção é extendida para o exterior?
+    - Me fala sobre o momento que uma patente é internacionalizada?
+    - Em que circunstâncias uma patente de invenção é registrada internacionalmente?
+    - Como e quando uma patente de invenção é extendida para outros países?
+    - Como sei quando minha invenção é internacionallizada?
+    - Como vou saber em que momento uma patente é válida no exterior?
 
 - intent: perguntar_inovacao
   examples: |
@@ -800,6 +826,21 @@ nlu:
     - O que se entende como inovação?
     - Um produto novo é uma inovação?
 
+- intent: perguntar_divulgação_invenção
+  examples: |
+    - Posso divulgar minha invenção depois de protegê-la?
+    - Após a proteção, posso tornar minha invenção pública?
+    - Uma vez que minha invenção esteja protegida, posso divulgá-la?
+    - Posso compartilhar minha invenção com outros depois de tê-la protegido?
+    - Depois de proteger minha invenção, posso revelá-la ao público?
+    - permissão de divulgação de invenção?
+    - Quando há permissão de divulgação de invento?
+    - Quando há permissão de divulgação de criação industrializável?
+    - Em que período ocorre a permissão de divulgação de criação?
+    - Quando posso anunciar meu invento?
+    - Em que momento posso disseminar minha criação?
+    - Minha invenção já tem pedido de patente, posso divulgar?
+
 - intent: cumprimentar_chegada
   examples: |
     - Olá!?
@@ -809,8 +850,9 @@ nlu:
     - Boa noite!?
     - Hi!?
     - Oi, tudo bem?
+    - Como vai?
 
-- intent: cumprimentar_despedida
+- intent: cumprimentar_agradecimento
   examples: |
     - Obrigada?
     - Muito obrigada!?
@@ -824,11 +866,19 @@ nlu:
     - Muito grato!?
     - Valeu!?
     - Valeu mesmo!?
+    - Show?
+    - Uau, brigadão?
 
-- intent: cumprimentar_agradecimento
+- intent: cumprimentar_despedida
   examples: |
     - Tchau!?
     - Até mais!?
+    - Depois eu volto?
+    - Adeus?
+    - Até breve?
+    - Até mais tarde?
+    - Até amanhã?
+    - Até nunca?
 
 - intent: perguntar_bot
   examples: |
@@ -848,6 +898,7 @@ nlu:
     - Você um bot?
     - Com quem eu falo?
     - Pra que você serve?
+    - Se apresente?
 
 - intent: perguntar_criador_bot
   examples: |
@@ -858,10 +909,14 @@ nlu:
     - Qual empresa te criou?
     - Me dê detalhes da sua criação?
     - Quero saber tudo sobre seu inventor?
-    - Me explica porque você foi criado?
+    - Me explica por que você foi criado?
     - Quando você foi criado?
     - Me diga tudo sobre o inventor do PatentIA?
-    - Quem cirou o chatbot PatentIA?
+    - Quem criou o chatbot PatentIA?
+    - Foi o INPI que te criou?
+    - Foi o governo que te criou?
+    - Quem te construiu?
+    - Quem fez você?
 
 - intent: perguntar_dados_bot
   examples: |
@@ -875,6 +930,88 @@ nlu:
     - Me forneça informações sobre como acessar os dados de construção do bot?
     - Quero informações sobre como esse chatbot foi criado?
     - Me dê informações sobre o PatentIA?
+
+- intent: perguntar_fallback
+  examples: |
+    - Fallback?
+    - O que é marca?
+    - Quero saber sobre marca?
+    - Quem descobriu o Brasil?
+    - Você é idiota?
+    - Você é burro?
+    - Você é um merda?
+    - Você é horrível?
+    - Você não sabe de nada?
+    - Você não serve para nada?
+    - Você não me ajudou?
+    - Quero saber sobre direito autoral?
+    - Quero saber sobre proteção suis generis?
+    - Por que meu pedido foi negado?
+    - Meu pedido de patente foi negado, o que devo fazer?
+    - Como entro com recurso?
+    - Tenho que ter um advogado para o recurso?
+    - Como peço patente pelo NIT?
+    - Sou aluno e minha pesquisa vai dar patente, como faço?
+    - Como sei se minha pesquisa deu patente?
+    - Tem concurso para o INPI?
+    - Como trabalho no INPI?
+    - O INPI está contratando?
+    - O INPI têm terceirizados?
+    - Como funciona a proteção de patentes em regiões como a União Europeia ou a América Latina?
+    - Quais são as regras sobre o uso de patentes para medicamentos genéricos?
+    - A patente sobre biotecnologia tem algum tipo de isenção?
+    - Quais são as limitações para patentes envolvendo algoritmos de IA?
+    - Como posso transformar minha patente em um segredo comercial?
+    - Quais são as opções de patenteamento para invenções colaborativas entre empresas?
+    - Quais são os passos para rescindir um contrato de licenciamento de patente?
+    - Quero saber sobre contratos?
+    - Existem proibições específicas para patentes no campo da genética?
+    - O que é infração de patente e como ela é penalizada?
+    - Como posso renovar uma patente?
+    - O que é uma patente provisória?
+    - Existe um custo adicional para manter uma patente internacional?
+    - Ganho dinheiro com patente?
+    - Fico rico se tiver uma patente?
+    - Posso ficar milionário com minha criação?
+    - O que é uma reivindicação independente e como ela deve ser redigida?
+    - Quais são os desafios de patentear invenções no setor de energia renovável?
+    - Quando minha patente vai ser examinada?
+    - Quanto tempo leva para obter uma patente?
+    - O que é um pedido de patente pendente?
+    - O que é quebra de patente?
+    - O que é licença compulsória?
+    - Já teve casos de licença compulsória?
+    - Se eu mudar minha invenção depois de patentear, preciso fazer outro registro?
+    - Posso ter mais de uma patente sobre diferentes aspectos da mesma invenção?
+    - Quais são os riscos de não patentear uma invenção?
+    - Qual é o papel de um examinador de patentes no processo?
+    - Se outra pessoa inventar algo similar depois de mim, a patente dela é válida?
+    - Qual é o impacto de uma patente sobre a concorrência?
+    - Qual é a diferença entre infringir uma patente e violar uma patente?
+    - Como funciona o processo de análise de uma patente?
+    - Como posso saber se uma patente está disponível para ser licenciada?
+    - Se eu patenteio algo, posso impedir que outros façam versões semelhantes?
+    - Qual é a diferença entre uma patente de produto e uma patente de processo?
+    - O que é patente contestada e como isso funciona?
+    - O que acontece se a análise da patente for negada?
+    - Como as patentes afetam a inovação e o desenvolvimento tecnológico?
+    - Posso patentear uma invenção em nome de um grupo de pessoas ou empresa?
+    - Como uma patente se relaciona com segredos comerciais?
+    - O que significa que uma patente está abandonada?
+    - Qual é o papel dos advogados de patentes no processo?
+    - Posso usar uma patente para conseguir investidores para minha invenção?
+    - Como sei a posição do meu pedido?
+    - Me informe a posição do meu pedido?
+    - Quando sai minha carta-patente?
+    - Alguém pode roubar a minha invenção e fazer pedido patente na faculdade?
+    - Sou mestrando e minha pesquisa dá patente, o que faço?
+    - Sou doutorando e minha pesquisa dá patente, o que faço?
+    - Faço faculdade, estou na graduação e minha pesquisa dá patente, o que faço?
+    - Como impeço de usarem minha invenção?
+    - Quero saber sobre o exame de patentes?
+    - Medicamento tem patente?
+    - Fármacos têm patente?
+    - Podem roubar minha invençao?
 
 - synonym: carta-patente
   examples: |
@@ -890,9 +1027,15 @@ nlu:
    -  proteção de criação industrializável
    -  proteção de invento
 
+- synonym: perspectiva de obtenção de patente
+  examples: |
+   -  possibilidade de concessão de patente
+   -  expectativa de concessão de patente
+   -  direito em potencial de patente
+   -  potencial de proteção patentária
+
 - synonym: INPI
   examples: |
-   - INSTITUTO NACIONAL DE PROPRIEDADE INDUSTRIAL
 
 - synonym: busca prévia de patente de invenção
   examples: |
@@ -906,12 +1049,12 @@ nlu:
   examples: |
    -  limite territorial da patente
 
-- synonym: patente de tecnologia verde
+- synonym: patente verde
   examples: |
+   -  patente de tecnologia verde
    -  patente ecológica
    -  patente ambiental
    -  patente de inovação sustentável
-   -  patente de tecnologia ambientalmente amigável
    -  patente de tecnologia sustentável
 
 - synonym: exame de patente prioritário
@@ -942,7 +1085,7 @@ nlu:
    -  patenteabilidade de invenção implementada por computador
    -  patenteabilidade de invenção implementada por software
 
-- synonym: validade de patente
+- synonym: validade da patente
   examples: |
 
 - synonym: preparação de pedido de patente
@@ -968,8 +1111,9 @@ nlu:
    -  entrega de carta-patente
    -  entrega de patente
 
-- synonym: requisitos de patenteabilidade
+- synonym: patenteabilidade
   examples: |
+   -  requisitos de patenteabilidade
 
 - synonym: modelo de utilidade
   examples: |
@@ -983,7 +1127,7 @@ nlu:
 
 - synonym: modelo de patente
   examples: |
-   -  modelo de texto de patente
+   -  exemplo de texto de patente
    -  modelo de pedido de patente
    -  modelo de registro de patente
    -  modelo de registro de pedido de patente
@@ -997,15 +1141,12 @@ nlu:
 - synonym: privilégios do titular da patente
   examples: |
 
-- synonym: permissão de divulgação de invenção
-  examples: |
-   -  permissão de divulgação de invento
-   -  permissão de divulgação de criação industrializável
-   -  permissão de divulgação de criação
-
 - synonym: pagamento de anuidade de patente
   examples: |
    -  pagamento de anuidade de pedido de patente
+
+- synonym: INSTITUTO NACIONAL DA PROPRIEDADE INTELECTUAL (Brasil). Curso DL 101P BR. Módulo 2. Introdução à PI - v. 3, p. 3 2018.
+  examples: |
 
 - synonym: titular da patente
   examples: |
@@ -1022,22 +1163,22 @@ nlu:
 
 - synonym: transferência de patente
   examples: |
-   -  transferência de titularidade de patente
+   -  alteração de titularidade de patente
    -  mudança de titularidade de patente
    -  transferência do dono da patente
    -  transferência do proprietário da patente
 
-- synonym: custos com pedido de patente
+- synonym: custos do pedido de patente
   examples: |
-   -  gastos com pedido de patente
+   -  gastos do pedido de patente
 
 - synonym: status de pedido de patente
   examples: |
-   -  status de depósito de pedido de patente
+   -  situação de depósito de pedido de patente
    -  acompanhamento de pedido de patente
    -  acompanhamento de depósito de pedido de patente
 
-- synonym: prescrição dos direitos da patente
+- synonym: encerramento dos direitos da patente
   examples: |
    -  fim dos direitos da patente
    -  término dos direitos da patente
@@ -1049,4 +1190,12 @@ nlu:
 - synonym: internacionalização de patente
   examples: |
    -  internacionalização de pedido de patente
+
+- synonym: divulgação de invento
+  examples: |
+   -  divulgação de criação
+   -  anúncio de invento
+   -  anúncio de criação 
+   - disseminação de invenção 
+   - disseminação de invento
 

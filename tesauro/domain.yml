@@ -3,7 +3,7 @@ version: "3.1"
 intents:
 
     - perguntar_patente
-    - perguntar_periodo_de_graca_protecao_de_invencao
+    - perguntar_periodo_de_graca
     - perguntar_como_proteger_invencao
     - perguntar_patente_expectativa_direito
     - perguntar_INPI
@@ -19,7 +19,7 @@ intents:
     - perguntar_patente_vigencia
     - perguntar_patente_elaboracao_de_pedido
     - perguntar_patente_deposito_de_pedido_sigilo
-    - perguntar_patente_documento_para_pedido
+    - perguntar_patente_documentos_para_pedido
     - perguntar_patente_modalidade
     - perguntar_invencao
     - perguntar_descoberta
@@ -30,39 +30,40 @@ intents:
     - perguntar_patente_de_invencao
     - perguntar_patente_elegibilidade_de_depositante
     - perguntar_propriedade_industrial
-    - perguntar_sistema_de_patentes_de_invencao_beneficio
+    - perguntar_sistema_de_patentes_beneficio
     - perguntar_estado_da_tecnica
     - perguntar_patente_modelo_de_deposito_de pedido_acesso
     - perguntar_patente_elegibilidade_de_deposito_de_pedido
     - perguntar_patente_titular_direitos
-    - perguntar_invencao_permissao_de_divulgacao
     - perguntar_patente_anuidade_de_pedido
     - perguntar_transferencia_de_tecnologia
     - perguntar_royalty_propriedade_intelectual
-    - perguntar_propriedade_intelectual
+    - PROPRIEDADE INTELECTUAL
     - perguntar_titular_da patente
     - perguntar_patente_autor
     - perguntar_wipo_das
     - perguntar_inovacao_tecnologica
-    - perguntar_titularidade_de_patente_transferencia
+    - perguntar_titularidade_da_patente_transferencia
     - perguntar_deposito_pedido_de_ patente_custos
     - perguntar_deposito_de_pedido_de_patente_acompanhamento
     - perguntar_patente_prescricao_de_direitos
     - perguntar_patente_deposito_de_pedido_etapas_de_concessao
     - perguntar_patente_depósito_de_pedido_internacionalizacao
     - perguntar_inovacao
+    - perguntar_divulgação_invenção
     - cumprimentar_chegada
-    - cumprimentar_despedida
     - cumprimentar_agradecimento
+    - cumprimentar_despedida
     - perguntar_bot
     - perguntar_criador_bot
     - perguntar_dados_bot
+    - perguntar_fallback
 
 
 actions:
 
     - utter_perguntar_patente
-    - utter_perguntar_periodo_de_graca_protecao_de_invencao
+    - utter_perguntar_periodo_de_graca
     - utter_perguntar_como_proteger_invencao
     - utter_perguntar_patente_expectativa_direito
     - utter_perguntar_INPI
@@ -78,7 +79,7 @@ actions:
     - utter_perguntar_patente_vigencia
     - utter_perguntar_patente_elaboracao_de_pedido
     - utter_perguntar_patente_deposito_de_pedido_sigilo
-    - utter_perguntar_patente_documento_para_pedido
+    - utter_perguntar_patente_documentos_para_pedido
     - utter_perguntar_patente_modalidade
     - utter_perguntar_invencao
     - utter_perguntar_descoberta
@@ -89,33 +90,34 @@ actions:
     - utter_perguntar_patente_de_invencao
     - utter_perguntar_patente_elegibilidade_de_depositante
     - utter_perguntar_propriedade_industrial
-    - utter_perguntar_sistema_de_patentes_de_invencao_beneficio
+    - utter_perguntar_sistema_de_patentes_beneficio
     - utter_perguntar_estado_da_tecnica
     - utter_perguntar_patente_modelo_de_deposito_de pedido_acesso
     - utter_perguntar_patente_elegibilidade_de_deposito_de_pedido
     - utter_perguntar_patente_titular_direitos
-    - utter_perguntar_invencao_permissao_de_divulgacao
     - utter_perguntar_patente_anuidade_de_pedido
     - utter_perguntar_transferencia_de_tecnologia
     - utter_perguntar_royalty_propriedade_intelectual
-    - utter_perguntar_propriedade_intelectual
+    - utter_PROPRIEDADE INTELECTUAL
     - utter_perguntar_titular_da patente
     - utter_perguntar_patente_autor
     - utter_perguntar_wipo_das
     - utter_perguntar_inovacao_tecnologica
-    - utter_perguntar_titularidade_de_patente_transferencia
+    - utter_perguntar_titularidade_da_patente_transferencia
     - utter_perguntar_deposito_pedido_de_ patente_custos
     - utter_perguntar_deposito_de_pedido_de_patente_acompanhamento
     - utter_perguntar_patente_prescricao_de_direitos
     - utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao
     - utter_perguntar_patente_depósito_de_pedido_internacionalizacao
     - utter_perguntar_inovacao
+    - utter_perguntar_divulgação_invenção
     - utter_cumprimentar_chegada
-    - utter_cumprimentar_despedida
     - utter_cumprimentar_agradecimento
+    - utter_cumprimentar_despedida
     - utter_perguntar_bot
     - utter_perguntar_criador_bot
     - utter_perguntar_dados_bot
+    - utter_perguntar_fallback
 
 
 responses:
@@ -123,14 +125,14 @@ responses:
     utter_perguntar_patente:
     - text: "Patente é um título de propriedade temporária sobre uma invenção ou modelo de utilidade, outorgado pelo Estado aos inventores ou autores ou outras pessoas físicas ou jurídicas detentoras de direitos sobre a criação. Com este direito, o inventor ou o detentor da patente tem o direito de impedir terceiros, sem o seu consentimento, de produzir, usar, colocar a venda, vender ou importar produto objeto de sua patente e/ ou processo ou produto obtido diretamente por processo por ele patenteado. Em contrapartida, o inventor se obriga a revelar detalhadamente todo o conteúdo técnico da matéria protegida pela patente." 
 
-    utter_perguntar_periodo_de_graca_protecao_de_invencao:
+    utter_perguntar_periodo_de_graca:
     - text: "O período de graça possibilita a proteção de um invento divulgado, até 12 meses antes do depósito, em alguns casos especiais. Especificamente, não será considerada como estado da técnica a divulgação de Invenção ou Modelo de Utilidade, quando ocorrida durante os doze meses que precederem a data de depósito ou a data da prioridade mais antiga do Pedido de Patente, se essa divulgação for promovida pelo próprio inventor ou por terceiros, com base em informações obtidas direta ou indiretamente do inventor ou em decorrência de atos por este realizados. Cabe observar que o INPI poderá exigir declaração do inventor relativo à divulgação, acompanhada de provas ou não, indicando a forma, local e data de ocorrência da divulgação. Ainda, o inventor poderá indicar essas informações por ocasião do depósito do pedido." 
 
     utter_perguntar_como_proteger_invencao:
     - text: "A patente é o instrumento correto para isso. Portanto, é necessário depositar um pedido no INPI, o qual, depois de devidamente analisado, poderá se tornar uma patente, com validade em todo o território nacional." 
 
     utter_perguntar_patente_expectativa_direito:
-    - text: "1) O simples depósito do pedido de patente não confere ao requerente os direitos a ela inerentes. Este será submetido a um determinado procedimento para verificação do preenchimento dos requisitos legais, nos termos dos artigos 19 a 37 da Lei 9279/96 e após tal avaliação será deferida ou não a concessão da patente. Somente proferida tal decisão, o requerente passará a ostentar posição de Titular do direito, podendo impedidr a utilização da invenção sem seu consentimento. De fato, o depósito gera expectativa de direito ao depositante, pois havendo exploração do invento, mesmo antes da concessão do privilégio, mas após o depósito, caberá direito de indenização em relação a este período. Repísa-se e, entretanto, que apenas direito concreto à reparação pelos danos causados se obtida a patente requerida. 2) O que o depositante possui é uma expectativa de direito que somente se confirmará caso venha a obter a patente. Caso o depositante esteja sofrendo prejuízos por concorrência desleal de alguém que esteja produzindo o mesmo objeto de sua invenção, o depositante poderá contatar tal concorrente notificando-o de que, caso o concorrente insista na prática desleal ele poderá, quando obtiver a Carta-Patente, impetrar uma ação judicial de indenização por perdas e danos, que poderão ser contabilizados a partir da data de publicação do pedido de patente. Neste caso, a publicação antecipada é útil para efeitos da determinação desta data. Entretanto, conforme estabelece o parágrafo primeiro do artigo 44 da LPI, caso o infrator obtenha conhecimento do conteúdo do pedido depositado antes mesmo de sua publicação, a indenização deverá considerar a data de início da exploração." 
+    - text: "1) O simples depósito do pedido de patente não confere ao requerente os direitos a ela inerentes. Este será submetido a um determinado procedimento para verificação do preenchimento dos requisitos legais, nos termos dos artigos 19 a 37 da Lei 9279/96 e após tal avaliação será deferida ou não a concessão da patente. Somente proferida tal decisão, o requerente passará a ostentar posição de Titular do direito, podendo impedir a utilização da invenção sem seu consentimento. De fato, o depósito gera expectativa de direito ao depositante, pois havendo exploração do invento, mesmo antes da concessão do privilégio, mas após o depósito, caberá direito de indenização em relação a este período. Repísa-se e, entretanto, que apenas direito concreto à reparação pelos danos causados se obtida a patente requerida. 2) O que o depositante possui é uma expectativa de direito que somente se confirmará caso venha a obter a patente. Caso o depositante esteja sofrendo prejuízos por concorrência desleal de alguém que esteja produzindo o mesmo objeto de sua invenção, o depositante poderá contatar tal concorrente notificando-o de que, caso o concorrente insista na prática desleal ele poderá, quando obtiver a Carta-Patente, impetrar uma ação judicial de indenização por perdas e danos, que poderão ser contabilizados a partir da data de publicação do pedido de patente. Neste caso, a publicação antecipada é útil para efeitos da determinação desta data. Entretanto, conforme estabelece o parágrafo primeiro do artigo 44 da LPI, caso o infrator obtenha conhecimento do conteúdo do pedido depositado antes mesmo de sua publicação, a indenização deverá considerar a data de início da exploração." 
 
     utter_perguntar_INPI:
     - text: "O Instituto Nacional da Propriedade Industrial - INPI, é uma autarquia federal brasileira, criada em 1970, vinculada ao Ministério do Desenvolvimento, Indústria e Comércio Exterior (MDIC) [...]. Tem como finalidade principal (baseado na Lei 9.279/96 - Lei da Propriedade Industrial), executar, no âmbito nacional, as normas que regulam a Propriedade Industrial, tendo em vista a sua função social, econômica, jurídica e técnica. É também sua atribuição se pronunciar quanto à conveniência de assinatura, ratificação e denúncia de convênios, tratados e acordos sobre propriedade industrial. O INPI é responsável pela Concessão de Marcas, Patentes, Transferência de Tecnologia (averbação de contratos), Registro de Desenho industrial, Indicação geográfica, Programa de Computador e Topografia de Circuito Integrado." 
@@ -166,12 +168,12 @@ responses:
     - text: "A vigência das patentes de invenção é de 20 anos e dos modelos de utilidade é de 15 anos, contados a partir da data de depósito do pedido." 
 
     utter_perguntar_patente_elaboracao_de_pedido:
-    - text: "O INPI expediu as Instruções Normativas 30/2013 (IN 30/13) e 31/2013 (IN 31/2013), disponível no portal do INPI, explicando como elaborar os pedidos de Patentes. Deve-se ler atentamente a IN 30/13 e IN 31/13 antes de começar a redigir o Pedido de Patente estudando bem os documentos encontrados na busca de anterioridades. Deve-se formular o pedido nos mesmos moldes, tendo em mente que se deve mencionar no relatório descritivo a existência dos pedidos anteriores (estado da técnica), brasileiros ou não, assim como fornecer informações sobre objetos ou processos semelhantes ao do objeto do pedido. Deve-se compará-los com o objeto, destacando os avanços técnicos introduzidos pela sua Invenção ou Modelo de Utilidade. Quanto ao conteúdo técnico, o relatório deve descrever o objeto ou produto ou processo para o qual se requer a proteção. A descrição deve ser feita de forma a permitir que uma pessoa especializada possa compreender e colocar em prática a tecnologia. As reivindicações devem caracterizar as peculiaridades do objeto do pedido para as quais se requer a proteção legal. São elas que estabelecem e delimitam os direitos da patente. A listagem de sequencias para pedidos da área biotecnológica, devem ser incluídas para possibilitar a aferição da suficiência descritiva de que trata o Art. 24 da LPI. Os desenhos, quando necessários, têm a finalidade de completar a descrição, esclarecendo ou delimitando o conteúdo da invenção. Finalmente, o resumo deve ser uma descrição clara, objetiva e sucinta do objeto do pedido de patente. A ferramenta Minha Primeira patente pode ajudar na redação do pedido de patente." 
+    - text: "1) Deve-se mencionar no relatório descritivo a existência dos pedidos anteriores (estado da técnica), brasileiros ou não, assim como fornecer informações sobre objetos ou processos semelhantes ao do objeto do pedido. Deve-se compará-los com o objeto, destacando os avanços técnicos introduzidos pela sua Invenção ou Modelo de Utilidade. Quanto ao conteúdo técnico, o relatório deve descrever o objeto ou produto ou processo para o qual se requer a proteção. A descrição deve ser feita de forma a permitir que uma pessoa especializada possa compreender e colocar em prática a tecnologia. As reivindicações devem caracterizar as peculiaridades do objeto do pedido para as quais se requer a proteção legal. São elas que estabelecem e delimitam os direitos da patente. A listagem de sequencias para pedidos da área biotecnológica, devem ser incluídas para possibilitar a aferição da suficiência descritiva de que trata o Art. 24 da LPI. Os desenhos, quando necessários, têm a finalidade de completar a descrição, esclarecendo ou delimitando o conteúdo da invenção. Finalmente, o resumo deve ser uma descrição clara, objetiva e sucinta do objeto do pedido de patente. A ferramenta Minha Primeira patente pode ajudar na redação do pedido de patente. 2) Obs.: Ver PORTARIA /INPI / DIRPA Nº 14, DE 29 DE AGOSTO DE 2024. Estabelece normas gerais de procedimentos para explicitar e cumprir dispositivos da Lei de Propriedade Industrial (LPI) - Lei nº 9.279, de 14 de maio de 1996, no que se refere às especificações quanto à forma e ao conteúdo dos pedidos de patente e certificados de adição." 
 
     utter_perguntar_patente_deposito_de_pedido_sigilo:
     - text: "Todos os pedidos tramitam no mais estrito sigilo durante o período de dezoito meses (salvo pedido de publicação antecipada pelo depositante) até o período da publicação na Revista de Propriedade Industrial (RPI)." 
 
-    utter_perguntar_patente_documento_para_pedido:
+    utter_perguntar_patente_documentos_para_pedido:
     - text: "Um requerimento do pedido de patente por meio do formulário [Depósito de Pedido de Patente[ acompanhado do conteúdo técnico - relatório descritivo, reivindicações, listagem de sequências (se for o caso), desenhos (se for o caso), resumo e a guia de recolhimento (GRU), devidamente paga. Esta guia é gerada eletronicamente e acessada através do portal do INPI (www.gov.br/inpi/pt-br). O INPI tem diversos serviços realizados via Internet, que dependem da criação de login e senha. Para emitir a guia, o usuário deve, portanto, efetuar antecipadamente seu cadastro, acessando [Cadastro no e-INPI] na página inicial do portal." 
 
     utter_perguntar_patente_modalidade:
@@ -204,7 +206,7 @@ responses:
     utter_perguntar_propriedade_industrial:
     - text: "A Propriedade Industrial segundo a Convenção de Paris de 1883 (art. 1 § 2), é o conjunto de direitos que compreende as patentes de invenção, os modelos de utilidade, os desenhos ou modelos industriais, as marcas de fábrica ou de comércio, as marcas de serviço, o nome comercial e as indicações de proveniência ou denominações de origem, bem como a repressão da concorrência desleal." 
 
-    utter_perguntar_sistema_de_patentes_de_invencao_beneficio:
+    utter_perguntar_sistema_de_patentes_beneficio:
     - text: "Basicamente, o sistema promove o progresso da técnica por dois motivos: ao constituir um incentivo ao inventor em prosseguir em suas pesquisas uma vez garantida a proteção aos investimentos realizados, e em segundo lugar incentivando seus concorrentes a buscarem alternativas tecnológicas para conquistarem o mercado, sem recorrer à licenças de exploração de patentes. Com a divulgação da invenção pelo documento de patente, a sociedade se beneficia com o conhecimento de uma tecnologia que de outra forma permaneceria como segredo industrial." 
 
     utter_perguntar_estado_da_tecnica:
@@ -219,9 +221,6 @@ responses:
     utter_perguntar_patente_titular_direitos:
     - text: "O titular da patente tem o direito de impedir terceiros, sem consentimento, de produzir, colocar à venda, usar, importar produto objeto da patente ou processo ou produto obtido diretamente por processo patenteado (capítulo V, Título I da LPI). Terceiros podem fazer uso da invenção somente com a permissão do titular (licença)." 
 
-    utter_perguntar_invencao_permissao_de_divulgacao:
-    - text: "Após o depósito do pedido de patente, o conteúdo do pedido permanece em sigilo por 18 meses. Caso seja de interesse dos inventores ou de instituições/ empresas envolvidas manter o conteúdo em sigilo por esses 18 meses, não se deve divulgar. Porém, logo após o depósito do pedido de patente, as divulgações podem ser realizadas, em qualquer meio, sem que sejam consideradas pertencentes ao estado da técnica para avaliação de novidade e/ou atividade inventiva da tecnologia." 
-
     utter_perguntar_patente_anuidade_de_pedido:
     - text: "O depositante do pedido e o titular da Patente estarão sujeitos ao pagamento de retribuição anual, denominadas anuidades. As anuidades deverão ser pagas a partir do segundo aniversário do pedido. Aí começa o prazo (3 meses) para pagamento da anuidade (que é chamada de terceira anuidade, pois é devida no início do terceiro ano).Perdendo este prazo, são concedidos mais 6 meses, mas o valor a ser pago também é maior. Deixar de fazê-lo vai acarretar o arquivamento do pedido ou patente." 
 
@@ -231,7 +230,7 @@ responses:
     utter_perguntar_royalty_propriedade_intelectual:
     - text: "Refere-se a um termo para definir a importância cobrada pelo proprietário ou detentor de uma patente de produto, processo de produção, marca, território, entre outros, ou pelo autor de uma obra original, pelos direitos de exploração, uso, distribuição ou para permitir sua comercialização do referido produto/tecnologia." 
 
-    utter_perguntar_propriedade_intelectual:
+    utter_PROPRIEDADE INTELECTUAL:
     - text: "A propriedade intelectual se refere [...] às obras literárias, artísticas e científicas, às interpretações dos artistas intérpretes e às execuções dos artistas executantes, aos fonogramas e às emissões de radiodifusão, às invenções em todos os domínios da atividade humana, as descobertas científicas, os desenhos e modelos industriais, às marcas industriais, comerciais e de serviço, bem como às firmas comerciais e denominações comerciais, à proteção contra a concorrência desleal e [todos os outros direitos inerentes à atividade intelectual nos domínios industrial, científico, literário e artístico (Convenção que Institui a Organização Mundial da Propriedade Intelectual, assinada em Estocolmo, em 14 de julho de 1967, Artigo 2, § viii)]." 
 
     utter_perguntar_titular_da patente:
@@ -246,8 +245,8 @@ responses:
     utter_perguntar_inovacao_tecnologica:
     - text: "Inovação tecnológica é a introdução no mercado de novos (ou significativamente melhorados) produtos ou serviços. Inclui alterações significativas nas suas especificações técnicas, componentes, materiais, software incorporado, ou outras características funcionais. Já a inovação do processo, é a implementação de novos (ou significativamente melhorados) processos de produção ou logística de bens ou serviços." 
 
-    utter_perguntar_titularidade_de_patente_transferencia:
-    - text: "A Patente é um bem do tipo intangível que pode conter valor agregado. Pode ser do interesse do depositante/titular transferir este direito para outrem. O tipo mais comum de transferência decorre de cessão ou venda do bem, mas também pode ser resultado da fusão, cisão, carta de arrematação, sucessão testamentária ou decisão judicial. A Patente pode ser cedida, total ou parcialmente, independentemente do tipo de pessoa, física ou jurídica. A Patente é um bem do tipo intangível que pode conter valor agregado. Pode ser do interesse do depositante/titular transferir este direito para outrem. O tipo mais comum de transferência decorre de cessão ou venda do bem, mas também pode ser resultado da fusão, cisão, carta de arrematação, sucessão testamentária ou decisão judicial. A Patente pode ser cedida, total ou parcialmente, independentemente do tipo de pessoa, física ou jurídica." 
+    utter_perguntar_titularidade_da_patente_transferencia:
+    - text: "A Patente é um bem do tipo intangível que pode conter valor agregado. Pode ser do interesse do depositante/titular transferir este direito para outrem. O tipo mais comum de transferência decorre de cessão ou venda do bem, mas também pode ser resultado da fusão, cisão, carta de arrematação, sucessão testamentária ou decisão judicial. A Patente pode ser cedida, total ou parcialmente, independentemente do tipo de pessoa, física ou jurídica." 
 
     utter_perguntar_deposito_pedido_de_ patente_custos:
     - text: "Basicamente é o somatório das taxas correspondentes ao Depósito de Pedido de Patente de Invenção / Modelo de Utilidade, Pagamento das Anuidades, Pedido de Exame e Expedição de Carta-Patente. OBS: Ver Tabela de Retribuição no portal do INPI. Em caso de obstáculos processuais como exigências, subsídios ao exame, restaurações etc, novas retribuições serão acrescidas aos custos da patente." 
@@ -259,29 +258,35 @@ responses:
     - text: "Uma vez decorrido o período de vigência, na falta de pagamento de alguma anuidade e deixando de efetivar a restauração, no caso de não exploração de patente ou renúncia do titular, cessa os direitos do titular, tornando-se a invenção domínio público, de forma que qualquer pessoa dela se possa utilizar livremente. No caso de arquivamento definitivo de pedidos, esses também passam a fazer parte do estado da técnica.     " 
 
     utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao:
-    - text: "Após o depósito do pedido, ele será submetido a um exame formal preliminar e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão SER pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária. Entretanto, no ato do depósito é garantida a prioridade àquele que primeiro apresentou a invenção ao INPI, sendo possível buscar parceiros e possíveis licenciantes para a tecnologia e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão ser pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária. Entretanto, no ato do depósito é garantida a prioridade àquele que primeiro apresentou a invenção ao INPI, sendo possível buscar parceiros e possíveis licenciantes para a tecnologia." 
+    - text: "Após o depósito do pedido, ele será submetido a um exame formal preliminar e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão SER pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária. Entretanto, no ato do depósito é garantida a prioridade àquele que primeiro apresentou a invenção ao INPI, sendo possível buscar parceiros e possíveis licenciantes para a tecnologia e, se a documentação estiver em ordem, será protocolizado. Caso o pedido não atenda formalmente às condições estabelecidas pelo INPI, o Instituto estabelecerá exigências a serem cumpridas no prazo de 30 (trinta) dias, sob pena de devolução ou arquivamento da documentação. O pedido ficará em sigilo por 18 meses, conforme preceitua a Lei, para que haja tempo hábil para depósito do pedido em outros países (se for necessário e viável). Após este prazo, o pedido será publicado na Revista da Propriedade Industrial - RPI, revista eletrônica semanal do INPI e poderá ser requerido até 36 meses da data do depósito, o pedido de exame. Após isso, o pedido será analisado (de acordo com a ordem cronológica dos pedidos) e ao final do exame, sendo atendidos todos os requisitos legais, a patente será concedida. Caso contrário, poderão ser formuladas pelo INPI exigências para que o pedido seja adequado (dentro de prazos legais e regras específicas). Caso o pedido seja indeferido é possível apresentar recurso ao INPI. Além disso, a partir do terceiro ano do depósito até o fim da concessão, deverão ser pagas as anuidades, conforme valores estipulados na tabela daquele Instituto. Somente a patente concedida garantirá ao titular os direitos previstos pela legislação patentária." 
 
     utter_perguntar_patente_depósito_de_pedido_internacionalizacao:
-    - text: "A internacionalização de um pedido de patente é uma decisão estratégica de negócio. Para aumentar a chance de sucesso de transferência de uma patente destinada para mercados globais ou para empresas que operam em outros países a internacionalização é fundamental. O depósito via PCT (Tratado em Matéria de Patentes) é uma alternativa de internacionalização temporária que proporciona maior tempo para a definição dos países nos quais se deseja nacionalizar. O prazo máximo para internacionalizar via PCT é de 12 meses contados a partir da data de depósito do pedido de patente no Brasil." 
+    - text: "1) A internacionalização de um pedido de patente, seja por meio do PCT ou da CUP, se dá a partir de um primeiro pedido de patente chamado prioridade. A data de depósito do documento de prioridade é estendida a todos os depósitos internacionais baseados neste documento. Isto é, todos os pedidos de patente decorrentes de um documento de prioridade possuem a mesma data de depósito do documento de prioridade. 2) A internacionalização de um pedido de patente é uma decisão estratégica de negócio. Para aumentar a chance de sucesso de transferência de uma patente destinada para mercados globais ou para empresas que operam em outros países a internacionalização é fundamental. O depósito via PCT (Tratado em Matéria de Patentes) é uma alternativa de internacionalização temporária que proporciona maior tempo para a definição dos países nos quais se deseja nacionalizar. O prazo máximo para internacionalizar via PCT é de 12 meses contados a partir da data de depósito do pedido de patente no Brasil." 
 
     utter_perguntar_inovacao:
     - text: "1) Inovação remete à introdução de novidade ou aperfeiçoamento no ambiente produtivo ou social que resulte em novos produtos, processos ou serviços. 2) A inovação é um produto novo ou melhorado quando introduzido no mercado. Também podem ser modelos de negócios e métodos organizacionais implementados nas operações das empresas. Para ter inovação, é preciso que a tecnologia ou invenção seja implementada e chegue ao mercado consumidor. Assistentes virtuais, drones entregadores e o acréscimo de funcionalidades e recursos podem ser citados como exemplos." 
 
+    utter_perguntar_divulgação_invenção:
+    - text: "Após o depósito do pedido de patente, o conteúdo do pedido permanece em sigilo por 18 meses. Caso seja de interesse dos inventores ou de instituições/ empresas envolvidas manter o conteúdo em sigilo por esses 18 meses, não se deve divulgar. Porém, logo após o depósito do pedido de patente, as divulgações podem ser realizadas, em qualquer meio, sem que sejam consideradas pertencentes ao estado da técnica para avaliação de novidade e/ou atividade inventiva da tecnologia." 
+
     utter_cumprimentar_chegada:
     - text: "Olá! Em que posso ajudar sobre o assunto de patentes?" 
 
-    utter_cumprimentar_despedida:
+    utter_cumprimentar_agradecimento:
     - text: "Espero ter ajudado!" 
 
-    utter_cumprimentar_agradecimento:
+    utter_cumprimentar_despedida:
     - text: "Até logo!" 
 
     utter_perguntar_bot:
     - text: "Eu sou o chatbot PatentIA, posso responder algumas perguntas sobre patentes." 
 
     utter_perguntar_criador_bot:
-    - text: "Eu fui criado em 2023 por Paula Cotrim de Abrantes em sua pesquisa de doutoramento em Ciência da Informação no Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict) em convênio com a Universidade Federal do Rio de Janeiro (UFRJ)." 
+    - text: "Eu fui criado no período de 2023 a 2025 por Paula Cotrim de Abrantes durante sua pesquisa de doutoramento em Ciência da Informação no Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict) em associação com a Universidade Federal do Rio de Janeiro (UFRJ)." 
 
     utter_perguntar_dados_bot:
-    - text: "Basta inserir o título da pesquisa em um buscador da internet que irá conseguir recuperar todas as informações sobre a criação do PatentIA. o titulo da pesquisa é Inter-relação da Ciência da Informação com a Inteligência Artificial em Sistemas de Organização do Conhecimento: análise empírica em protótipo de chatbot e análise patentométrica no período de 2000 a 2022. Os dados são de livre acesso desde que fornecido crédito à criadora. Vale salientar que o PatentIA foi construído de forma intrínseca a um vocabulário controlado elaborado pela mesma autora do chatbot. O vocabulário controlado pode ser acessado pelo link disponível na pesquisa de doutoramento." 
+    - text: "Basta inserir o título da pesquisa em um buscador da internet que irá conseguir recuperar todas as informações sobre a criação do PatentIA. O título da pesquisa é Inter-relação da Organização do Conhecimento com a Inteligência Artificial: análise empírica em protótipos de vocabulário de controlado de chatbot e análise em patentes no período de 2000 a 2022.. Os dados são de livre acesso desde que fornecido crédito à criadora. Vale salientar que o PatentIA foi construído de forma intrínseca a um vocabulário controlado elaborado pela mesma autora do chatbot. O vocabulário controlado pode ser acessado pelo link disponível na pesquisa de doutoramento e por aqui: https://cientistaspatentes.com.br/tematres/vocab/" 
+
+    utter_perguntar_fallback:
+    - text: "Desculpe, não tenho essa resposta, poderia reformular sua pergunta? Posso responder algumas perguntas sobre o domínio de patentes." 
 

@@ -9,8 +9,8 @@ rules:
 
 - rule: rule 2
   steps:
-  - intent: perguntar_periodo_de_graca_protecao_de_invencao
-  - action: utter_perguntar_periodo_de_graca_protecao_de_invencao
+  - intent: perguntar_periodo_de_graca
+  - action: utter_perguntar_periodo_de_graca
 
 - rule: rule 3
   steps:
@@ -89,8 +89,8 @@ rules:
 
 - rule: rule 18
   steps:
-  - intent: perguntar_patente_documento_para_pedido
-  - action: utter_perguntar_patente_documento_para_pedido
+  - intent: perguntar_patente_documentos_para_pedido
+  - action: utter_perguntar_patente_documentos_para_pedido
 
 - rule: rule 19
   steps:
@@ -144,8 +144,8 @@ rules:
 
 - rule: rule 29
   steps:
-  - intent: perguntar_sistema_de_patentes_de_invencao_beneficio
-  - action: utter_perguntar_sistema_de_patentes_de_invencao_beneficio
+  - intent: perguntar_sistema_de_patentes_beneficio
+  - action: utter_perguntar_sistema_de_patentes_beneficio
 
 - rule: rule 30
   steps:
@@ -169,83 +169,83 @@ rules:
 
 - rule: rule 34
   steps:
-  - intent: perguntar_invencao_permissao_de_divulgacao
-  - action: utter_perguntar_invencao_permissao_de_divulgacao
-
-- rule: rule 35
-  steps:
   - intent: perguntar_patente_anuidade_de_pedido
   - action: utter_perguntar_patente_anuidade_de_pedido
 
-- rule: rule 36
+- rule: rule 35
   steps:
   - intent: perguntar_transferencia_de_tecnologia
   - action: utter_perguntar_transferencia_de_tecnologia
 
-- rule: rule 37
+- rule: rule 36
   steps:
   - intent: perguntar_royalty_propriedade_intelectual
   - action: utter_perguntar_royalty_propriedade_intelectual
 
-- rule: rule 38
+- rule: rule 37
   steps:
-  - intent: perguntar_propriedade_intelectual
-  - action: utter_perguntar_propriedade_intelectual
+  - intent: PROPRIEDADE INTELECTUAL
+  - action: utter_PROPRIEDADE INTELECTUAL
 
-- rule: rule 39
+- rule: rule 38
   steps:
   - intent: perguntar_titular_da patente
   - action: utter_perguntar_titular_da patente
 
-- rule: rule 40
+- rule: rule 39
   steps:
   - intent: perguntar_patente_autor
   - action: utter_perguntar_patente_autor
 
-- rule: rule 41
+- rule: rule 40
   steps:
   - intent: perguntar_wipo_das
   - action: utter_perguntar_wipo_das
 
-- rule: rule 42
+- rule: rule 41
   steps:
   - intent: perguntar_inovacao_tecnologica
   - action: utter_perguntar_inovacao_tecnologica
 
-- rule: rule 43
+- rule: rule 42
   steps:
-  - intent: perguntar_titularidade_de_patente_transferencia
-  - action: utter_perguntar_titularidade_de_patente_transferencia
+  - intent: perguntar_titularidade_da_patente_transferencia
+  - action: utter_perguntar_titularidade_da_patente_transferencia
 
-- rule: rule 44
+- rule: rule 43
   steps:
   - intent: perguntar_deposito_pedido_de_ patente_custos
   - action: utter_perguntar_deposito_pedido_de_ patente_custos
 
-- rule: rule 45
+- rule: rule 44
   steps:
   - intent: perguntar_deposito_de_pedido_de_patente_acompanhamento
   - action: utter_perguntar_deposito_de_pedido_de_patente_acompanhamento
 
-- rule: rule 46
+- rule: rule 45
   steps:
   - intent: perguntar_patente_prescricao_de_direitos
   - action: utter_perguntar_patente_prescricao_de_direitos
 
-- rule: rule 47
+- rule: rule 46
   steps:
   - intent: perguntar_patente_deposito_de_pedido_etapas_de_concessao
   - action: utter_perguntar_patente_deposito_de_pedido_etapas_de_concessao
 
-- rule: rule 48
+- rule: rule 47
   steps:
   - intent: perguntar_patente_depósito_de_pedido_internacionalizacao
   - action: utter_perguntar_patente_depósito_de_pedido_internacionalizacao
 
-- rule: rule 49
+- rule: rule 48
   steps:
   - intent: perguntar_inovacao
   - action: utter_perguntar_inovacao
+
+- rule: rule 49
+  steps:
+  - intent: perguntar_divulgação_invenção
+  - action: utter_perguntar_divulgação_invenção
 
 - rule: rule 50
   steps:
@@ -254,13 +254,13 @@ rules:
 
 - rule: rule 51
   steps:
-  - intent: cumprimentar_despedida
-  - action: utter_cumprimentar_despedida
+  - intent: cumprimentar_agradecimento
+  - action: utter_cumprimentar_agradecimento
 
 - rule: rule 52
   steps:
-  - intent: cumprimentar_agradecimento
-  - action: utter_cumprimentar_agradecimento
+  - intent: cumprimentar_despedida
+  - action: utter_cumprimentar_despedida
 
 - rule: rule 53
   steps:
@@ -276,4 +276,9 @@ rules:
   steps:
   - intent: perguntar_dados_bot
   - action: utter_perguntar_dados_bot
+
+- rule: rule 56
+  steps:
+  - intent: perguntar_fallback
+  - action: utter_perguntar_fallback
 
