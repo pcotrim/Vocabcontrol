@@ -125,7 +125,7 @@ def webhook():
         data = request.json
 
         # Direciona a requisição para o servidor Rasa
-        rasa_url = "http://10.128.0.13:5005/webhooks/rest/webhook"
+        rasa_url = "http://10.128.0.14:5005/webhooks/rest/webhook"
         response = requests.post(rasa_url, json=data)
 
         # Retorna a resposta do servidor Rasa
