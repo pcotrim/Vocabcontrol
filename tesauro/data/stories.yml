@@ -4,5 +4,5 @@ stories:
 
 - story: basic
   steps:
-  - intent: patente
-  - action: utter_patente
+  - intent: perguntar_patente
+  - action: utter_perguntar_patente
