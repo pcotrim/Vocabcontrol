@@ -1077,7 +1077,7 @@ nlu:
 
 - synonym: pedido de patente no Brasil
   examples: |
-   -  depósito de pedido no Brasil
+   -  depósito de pedido de patente no Brasil
 
 - synonym: patenteabilidade de software
   examples: |
