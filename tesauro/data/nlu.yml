@@ -1102,7 +1102,7 @@ nlu:
 
 - synonym: tipo de patente
   examples: |
-   -  natureza da patente
+   -  modalidade de patente
 
 - synonym: recebimento de patente
   examples: |
@@ -1113,7 +1113,7 @@ nlu:
 
 - synonym: patenteabilidade
   examples: |
-   -  requisitos de patenteabilidade
+   -  matéria patenteável
 
 - synonym: modelo de utilidade
   examples: |
@@ -1141,9 +1141,9 @@ nlu:
 - synonym: privilégios do titular da patente
   examples: |
 
-- synonym: pagamento de anuidade de patente
+- synonym: pagamento de anuidade de pedido de patente
   examples: |
-   -  pagamento de anuidade de pedido de patente
+   -  pagamento de anuidade de registro de patente
 
 - synonym: INSTITUTO NACIONAL DA PROPRIEDADE INTELECTUAL (Brasil). Curso DL 101P BR. Módulo 2. Introdução à PI - v. 3, p. 3 2018.
   examples: |
