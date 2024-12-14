@@ -1156,7 +1156,7 @@ nlu:
 
 - synonym: inventor da patente 
   examples: |
-   - criador da patente
+   - autor da patente
 
 - synonym: WIPO DAS
   examples: |
