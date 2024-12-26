@@ -45,7 +45,7 @@ Observação 2: Instituições públicas e privadas geralmente possuem servidore
 INÍCIO DAS INSTRUÇÕES
 
 1) Baixe o aplicativo do GitHub para ser usado no computador – link: https://docs.github.com/pt/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop (GitHub Doc, 2024);
-2) Com o modelo já treinado (.tar.gz), conforme as instruções especificadas na seção 8.1.2, copiar o modelo juntamente com os arquivos.yml na respectiva pasta do Projeto no GitHub do seu computador. Certifique-se que tenha apenas um arquivo.tar.gz na pasta models do GitHub;
+2) Com o modelo já treinado (.tar.gz), copiar o modelo juntamente com os arquivos.yml na respectiva pasta do Projeto no GitHub do seu computador. Certifique-se que tenha apenas um arquivo.tar.gz na pasta models do GitHub;
 3) Criar um perfil no Google Cloud;
 4) Clicar no botão “Console” na tela superior direita;
 5) Pesquise: compute engine; 
