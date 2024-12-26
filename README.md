@@ -198,5 +198,5 @@ Observações Gerais:
 
 Os arquivos completos usados na instalação do protótipo do chatbot PatentIA na máquina virtual do Google Cloud podem ser encontrados em: https://github.com/pcotrim/Vocabcontrol.
 Para criar um chatbot igual ao desta pesquisa, aconselha-se usar os arquivos disponíveis nesse repositório e mudar somente os dados nos arquivos .yml e os arquivos sinalizados neste tutorial. 
-O protótipo do chatbot PatentIA pode ser acessado pelo link: http://35.184.112.97/
+O protótipo do chatbot PatentIA pode ser acessado pelo link: http://35.193.251.126/
 
