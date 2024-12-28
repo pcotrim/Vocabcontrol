@@ -41,7 +41,7 @@ ATENÇÃO
 
 Observação 1: é necessário criar uma conta no Google Cloud, e, a depender do tempo de uso de uma máquina virtual, ela pode vir a ser paga.
 Observação 2: instituições públicas e privadas geralmente possuem servidores computacionais com condições de hospedar e operar o Rasa sem a necessidade de pagamento de outras plataformas. 
-Obseervação 3: a pasta intitulada "vocabcontrol" na tese de doutorado, recebeu o nome "tesauro" neste repositório.
+Observação 3: a pasta intitulada "vocabcontrol" na tese de doutorado, recebeu o nome "tesauro" neste repositório.
 
 INÍCIO DAS INSTRUÇÕES
 
