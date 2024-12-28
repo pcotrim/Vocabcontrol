@@ -41,10 +41,11 @@ nlu:
     - Posso divulgar minha invenção?
     - Posso publicar um resumo relacionado à tecnologia a ser patenteada em um evento (simpósio, congresso, reunião anual, etc.)?
     - Posso divulgar minha invenção antes de protegê-la?
+    - Um artigo científico meu teve uma publicação prévia, isso faz com que meu invento não consiga ser patenteado?
     - Estou vendendo a minha invenção há 3 anos, agora quero proteger como patente, como eu faço?
     - Me explica sobre período de graça?
     - Posso patentear uma invenção que já mostrei publicamente?
-
+    
 - intent: perguntar_como_proteger_invencao
   examples: |
     - Como proteger uma invenção ou criação industrializável?
@@ -260,6 +261,7 @@ nlu:
     - Me fala em detalhes como faço para depositar minha patente no Brasil?
     - Formas de fazer pedido de patente?
     - Maneiras de fazer pedido de patente?
+    - Para registrar uma patente, como faço?
     - Me explica como faço um pedido de patente?
 
 - intent: perguntar_patente_patenteabilidade_de_software
@@ -312,6 +314,7 @@ nlu:
     - Quem pode redigir o pedido de patente?
     - Como faço para patentear meu invento?
     - Como redijo uma patente?
+    - Preciso redigir uma patente, faço isso igual a um artigo?
     - Qual é a estrutura recomendada para uma redação de patente?
     - Como deve ser uma redação de um pedido de patente?
 
@@ -374,6 +377,8 @@ nlu:
     - Queria saber o que é uma invenção?
     - Me fala tudo que sabe sobre invenção?
     - O que é mesmo invenção, hein?
+    - O que pode se entender como invenção?
+    - O que se considera invenção?
     - Mas o que é invenção afinal de contas?
     - Invenções resolvem problemas, me explique?
 
@@ -677,6 +682,7 @@ nlu:
     - Quero saber sobre titularidade da patente?
     - Me fala sobre titular da patente?
     - Quem é o proprietário legal da patente?
+    - Quem seria o titular no pedido de patente, seria ele o inventor também?
     - Quem é o titular?
     - A quem pertence a patente?
 
