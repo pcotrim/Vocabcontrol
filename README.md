@@ -41,6 +41,7 @@ ATENÇÃO
 
 Observação 1: é necessário criar uma conta no Google Cloud, e, a depender do tempo de uso de uma máquina virtual, ela pode vir a ser paga.
 Observação 2: Instituições públicas e privadas geralmente possuem servidores computacionais com condições de hospedar e operar o Rasa sem a necessidade de pagamento de outras plataformas. 
+Obseervação 3: a pasta intitulada "vocabcontrol" na tese de doutorado, recebeu o nome "tesauro" neste repositório.
 
 INÍCIO DAS INSTRUÇÕES
 
@@ -49,7 +50,7 @@ INÍCIO DAS INSTRUÇÕES
 3) Criar um perfil no Google Cloud;
 4) Clicar no botão “Console” na tela superior direita;
 5) Pesquise: compute engine; 
-6) No Google Console, criar uma nova instância (“nome do chatbot”, E2, Ubuntu, 2G, http e https clicados), verifique o IP interno e o IP externo da máquina criada. Obs.: A máquina virtual usada no Google Cloud é paga; o pagamento ocorre no cartão de crédito cadastrado;
+6) No Google Console, criar uma nova instância (“nome do chatbot”, E2, Ubuntu 20G, tipo de maquina: e2-msmall 2G, http e https clicados), verifique o IP interno e o IP externo da máquina criada. Obs.: A máquina virtual usada no Google Cloud é paga; o pagamento ocorre no cartão de crédito cadastrado;
 7) No arquivo do computador doméstico, na pasta do GitHub que está o arquivo chatbot.py, atualize o IP interno da máquina nova:
 rasa_url = "coloque o endereço"
 8) No arquivo do computador, na pasta do GitHub que está o arquivo templates\tkinter3_codepen.htm, atualize o IP externo da máquina nova: url = "coloque o endereço";
