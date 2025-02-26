@@ -1,4 +1,4 @@
-Sample Flask Project for Back4app Containers This repository contains a sample Flask application designed to be deployed on Back4app Containers. It serves as a template and guide to help you get started with deploying your own Flask applications on Back4app Containers.
+Programmer Information: Sample Flask Project for Back4app Containers This repository contains a sample Flask application designed to be deployed on Back4app Containers. It serves as a template and guide to help you get started with deploying your own Flask applications on Back4app Containers.
 
 Project Structure ├── app.py # Main Flask application entry point ├── Dockerfile # Dockerfile for building the Docker image ├── requirements.txt # Python dependencies for the Flask application └── README.md # This readme file
 
@@ -14,7 +14,7 @@ License This sample Flask project is released under the MIT License.
 ----
 
 
-Este repositório contém uma aplicação Flask de exemplo projetada para ser implantada nos Back4app Containers. Ele serve como um modelo e guia para ajudá-lo a começar a implantar suas próprias aplicações Flask nos Back4app Containers.
+Informações do programador: Este repositório contém uma aplicação Flask de exemplo projetada para ser implantada nos Back4app Containers. Ele serve como um modelo e guia para ajudá-lo a começar a implantar suas próprias aplicações Flask nos Back4app Containers.
 
 A estrutura do projeto inclui os seguintes arquivos: app.py, que é o ponto de entrada principal da aplicação Flask; Dockerfile, que é utilizado para construir a imagem Docker; requirements.txt, que lista as dependências Python necessárias para a aplicação Flask; e README.md, que é este arquivo de instruções.
 
@@ -30,7 +30,7 @@ Este projeto Flask de exemplo é distribuído sob a Licença MIT.
 Os dados neste repositório fazem parte da pesquisa realizada na tese de doutorado de Paula Cotrim de Abrantes, elaborada na linha de pesquisa 1, Comunicação, Organização e Gestão da Informação e do Conhecimento, do Programa de Pós-Graduação em Ciência da Informação (PPGCI), do Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict), do Ministério da Ciência e Tecnologia e Inovação (MCTI), em associação com a Escola de Comunicação (ECO), da Universidade Federal do Rio de Janeiro (UFRJ).
 ---
 
-TUTORIAL DE INSTALAÇÃO DO PROTÓTIPO DO CHATBOT NO GOOLGE CLOUD
+TUTORIAL DE PAULA ABRANTES REFERENTE À INSTALAÇÃO DO PROTÓTIPO DO CHATBOT NO GOOLGE CLOUD
 
 Este tutorial foi elaborado pela autora desta pesquisa a partir de códigos de programação criados por um profissional da computação contratado para criar tais códigos.
 
