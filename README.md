@@ -27,7 +27,7 @@ Sinta-se à vontade para personalizar este modelo modificando o arquivo app.py e
 Este projeto Flask de exemplo é distribuído sob a Licença MIT.
 
 ---
-Os dados neste repositório fazem parte da pesquisa realizada na tese de doutorado de Paula Cotrim de Abrantes, elaborada na linha de pesquisa 1, Comunicação, Organização e Gestão da Informação e do Conhecimento, do Programa de Pós-Graduação em Ciência da Informação (PPGCI), do Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict), do Ministério da Ciência e Tecnologia e Inovação (MCTI), em associação com a Escola de Comunicação (ECO), da Universidade Federal do Rio de Janeiro (UFRJ).
+Os dados neste repositório fazem parte da pesquisa realizada na tese de doutorado de Paula Cotrim de Abrantes: "Inter-relação da Organização do Conhecimento com a Inteligência Artificial em Sistemas de Organização do Conhecimento: análise empírica em protótipo de chatbot e análise em patentes no período de 2000 a 2022". Elaborada na linha de pesquisa 1, Comunicação, Organização e Gestão da Informação e do Conhecimento, do Programa de Pós-Graduação em Ciência da Informação (PPGCI), do Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict), do Ministério da Ciência e Tecnologia e Inovação (MCTI), em associação com a Escola de Comunicação (ECO), da Universidade Federal do Rio de Janeiro (UFRJ).
 ---
 
 TUTORIAL DE PAULA ABRANTES REFERENTE À INSTALAÇÃO DO PROTÓTIPO DO CHATBOT NO GOOLGE CLOUD
